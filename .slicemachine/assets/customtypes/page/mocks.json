@@ -1,0 +1,37 @@
+{
+  "id": "ab9ee206-694f-4cf8-8a0f-ece24abfa239",
+  "uid": "sunt-repudiandae-quibusdam",
+  "type": "page",
+  "data": {
+    "meta_title": "enable open-source e-tailers",
+    "meta_description": "evolve integrated web services",
+    "social_cards": [
+      {
+        "social_card_image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
+        },
+        "social_card_title": "embrace best-of-breed initiatives",
+        "social_card_description": "embrace efficient e-tailers"
+      },
+      {
+        "social_card_image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
+        },
+        "social_card_title": "synergize rich schemas",
+        "social_card_description": "whiteboard front-end ROI"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "text_slice",
+    "items": [],
+    "primary": {
+      "text": [
+        {
+          "type": "heading1",
+          "text": "Incentivize killer networks",
+          "spans": []
+        }
+      ]
+    }
+  },
+  {
+    "variation": "twoColumn",
+    "name": "twoColumn",
+    "slice_type": "text_slice",
+    "items": [],
+    "primary": {
+      "text": [
+        {
+          "type": "heading1",
+          "text": "Synthesize B2C portals",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

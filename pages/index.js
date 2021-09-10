@@ -4,16 +4,15 @@ import { Client } from '../prismic-configuration'
 
 import resolver from '../sm-resolver.js'
 
-const Page = (props) => <SliceZone {...props} resolver={resolver} />
+export default function Home(props) {
+  console.log('props', props)
+  return <SliceZone {...props} resolver={resolver} />
+}
 
 // Fetch content from prismic
 export const getStaticProps = useGetStaticProps({
   client: Client(),
-  type: 'page',
-  queryType: 'repeat',
   apiParams: {
-    uid: 'home',
+    uid: 'homepage',
   },
 })
-
-export default Page

@@ -8,8 +8,37 @@
       "uid": {
         "type": "UID",
         "config": {
-          "label": "UID",
+          "label": "",
           "placeholder": "unique-identifier-eg-homepage"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "featured_image": {
+              "type": "SharedSlice"
+            },
+            "image_gallery": {
+              "type": "SharedSlice"
+            },
+            "quote_slice": {
+              "type": "SharedSlice"
+            },
+            "text_slice": {
+              "type": "SharedSlice"
+            },
+            "full_width_image": {
+              "type": "SharedSlice"
+            },
+            "banner_slice": {
+              "type": "SharedSlice"
+            },
+            "main_content": {
+              "type": "SharedSlice"
+            }
+          }
         }
       }
     },

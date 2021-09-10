@@ -9,8 +9,6 @@ const Page = (props) => <SliceZone {...props} resolver={resolver} />
 // Fetch content from prismic
 export const getStaticProps = useGetStaticProps({
   client: Client(),
-  queryType: 'repeat',
-  type: 'page',
   apiParams({ params }) {
     return {
       uid: params.uid,
@@ -20,7 +18,6 @@ export const getStaticProps = useGetStaticProps({
 
 export const getStaticPaths = useGetStaticPaths({
   client: Client(),
-  type: 'page',
   formatPath: (prismicDocument) => ({
     params: {
       uid: prismicDocument.uid,

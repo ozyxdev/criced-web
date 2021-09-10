@@ -35,7 +35,13 @@ export const customLink = (type, element, content, children, index) => (
 )
 
 export const Router = {
-  routes: [{ type: 'page', path: '/:uid' }],
+  routes: [
+    { type: 'page', path: '/:uid' },
+    {
+      type: 'home-page',
+      path: '/',
+    },
+  ],
   href: (type) => {
     const route = Router.routes.find((r) => r.type === type)
     return route && route.href
