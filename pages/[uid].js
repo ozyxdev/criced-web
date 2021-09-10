@@ -2,7 +2,7 @@ import SliceZone from 'next-slicezone'
 import { useGetStaticProps, useGetStaticPaths } from 'next-slicezone/hooks'
 import { Client } from '../prismic-configuration'
 
-import resolver from '../sm-resolver.js'
+import resolver from '../sm-resolver'
 
 const Page = (props) => <SliceZone {...props} resolver={resolver} />
 

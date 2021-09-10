@@ -11,6 +11,7 @@ module.exports = {
         "printWidth": 80,
         "semi": false,
       }
-    ]
+    ],
+    'react-hooks/rules-of-hooks': 0
   }
 };

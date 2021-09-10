@@ -50,13 +50,6 @@
             "thumbnails": []
           },
           "type": "Image"
-        },
-        "date": {
-          "config": {
-            "label": "",
-            "placeholder": ""
-          },
-          "type": "Date"
         }
       },
       "items": {}

@@ -19,9 +19,9 @@ export default class MyApp extends NextApp {
     const { Component, pageProps, props } = this.props
     console.log('pageProps', pageProps)
     return (
-      // <Layout menu={props.menu}>
-      <Component {...pageProps} />
-      // </Layout>
+      <Layout menu={props.menu}>
+        <Component {...pageProps} />
+      </Layout>
     )
   }
 }

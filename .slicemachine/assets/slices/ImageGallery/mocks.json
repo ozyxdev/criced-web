@@ -12,20 +12,20 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=727&h=402&fit=crop"
+          "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=727&h=402&fit=crop"
         },
         "imageDescription": [
           {
             "type": "paragraph",
-            "text": "Proident dolor laboris excepteur do sint non nulla mollit eiusmod commodo. Ipsum aliquip sunt quis. Sint nisi eiusmod laboris magna commodo enim tempor nulla excepteur ipsum.",
+            "text": "Incididunt eu magna sit do cillum cupidatat magna. Voluptate adipisicing nisi proident ipsum sunt enim ea laborum fugiat.",
             "spans": []
           }
         ],
         "link": {
           "link_type": "Web",
-          "url": "http://google.com"
+          "url": "http://twitter.com"
         },
-        "linkLabel": "integrate compelling methodologies"
+        "linkLabel": "benchmark revolutionary relationships"
       },
       {
         "image": {
@@ -35,20 +35,20 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88?w=727&h=402&fit=crop"
+          "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb?w=727&h=402&fit=crop"
         },
         "imageDescription": [
           {
             "type": "paragraph",
-            "text": "Tempor amet sunt fugiat et nostrud fugiat occaecat veniam.",
+            "text": "Amet dolore aliquip laboris aute Lorem culpa. Elit velit ut labore nulla laboris est consequat do.",
             "spans": []
           }
         ],
         "link": {
           "link_type": "Web",
-          "url": "https://slicemachine.dev"
+          "url": "http://google.com"
         },
-        "linkLabel": "whiteboard B2B markets"
+        "linkLabel": "seize cross-media platforms"
       },
       {
         "image": {
@@ -58,27 +58,73 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=727&h=402&fit=crop"
+          "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e?w=727&h=402&fit=crop"
         },
         "imageDescription": [
           {
             "type": "paragraph",
-            "text": "Sit ullamco do excepteur sit et tempor ut.",
+            "text": "Non pariatur quis in exercitation pariatur esse aliqua duis ea voluptate id ea magna laboris pariatur.",
             "spans": []
           }
         ],
         "link": {
           "link_type": "Web",
-          "url": "http://google.com"
+          "url": "http://twitter.com"
         },
-        "linkLabel": "mesh end-to-end architectures"
+        "linkLabel": "synergize robust infrastructures"
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 727,
+            "height": 402
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=727&h=402&fit=crop"
+        },
+        "imageDescription": [
+          {
+            "type": "paragraph",
+            "text": "Ad esse adipisicing quis voluptate laboris nisi esse officia cupidatat. Laboris occaecat irure culpa.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        },
+        "linkLabel": "grow wireless portals"
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 727,
+            "height": 402
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=727&h=402&fit=crop"
+        },
+        "imageDescription": [
+          {
+            "type": "paragraph",
+            "text": "Culpa magna nisi est ipsum labore minim anim cupidatat sunt labore. Ullamco laboris excepteur culpa officia nostrud deserunt labore non qui reprehenderit consectetur incididunt.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        },
+        "linkLabel": "reintermediate virtual e-commerce"
       }
     ],
     "primary": {
       "galleryTitle": [
         {
           "type": "heading2",
-          "text": "Aggregate robust convergence",
+          "text": "Drive collaborative paradigms",
           "spans": []
         }
       ]

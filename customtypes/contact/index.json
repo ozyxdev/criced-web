@@ -1,32 +1,28 @@
 {
-  "id": "home-page",
-  "label": "Home Page",
+  "id": "contact",
+  "label": "contact",
   "repeatable": false,
   "status": true,
   "json": {
     "Main": {
-      "uid": {
-        "config": {
-          "label": "",
-          "placeholder": ""
-        },
-        "type": "UID"
-      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "full_width_image": {
+            "banner_slice": {
               "type": "SharedSlice"
             },
             "featured_image": {
               "type": "SharedSlice"
             },
-            "banner_slice": {
+            "full_width_image": {
               "type": "SharedSlice"
             },
             "image_gallery": {
+              "type": "SharedSlice"
+            },
+            "main_content": {
               "type": "SharedSlice"
             },
             "quote_slice": {

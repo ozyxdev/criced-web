@@ -1,6 +1,10 @@
 {
   "slices": {
-    "BannerSlice": {},
+    "BannerSlice": {
+      "default-slice": {
+        "primary": {}
+      }
+    },
     "FullWidthImage": {},
     "ImageGallery": {},
     "FeaturedImage": {},
@@ -10,6 +14,7 @@
   },
   "_cts": {
     "page": {},
-    "home-page": {}
+    "home-page": {},
+    "contact": {}
   }
 }

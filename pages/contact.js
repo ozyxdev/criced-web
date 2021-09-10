@@ -4,14 +4,15 @@ import { Client } from '../prismic-configuration'
 
 import resolver from '../sm-resolver'
 
-export default function Home(props) {
-  console.log('props', props)
-  return <SliceZone {...props} resolver={resolver} />
-}
+const Contact = (props) => <SliceZone {...props} resolver={resolver} />
 
 // Fetch content from prismic
 export const getStaticProps = useGetStaticProps({
   client: Client(),
-  type: 'home-page',
+  type: 'contact',
   queryType: 'single',
 })
+
+// Fetch content from prismic
+
+export default Contact
