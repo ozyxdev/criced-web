@@ -7,6 +7,7 @@ const Header = ({ menu = [] }) => (
       {RichText.asText(menu.data.title)}
     </a>
     <Links menuLinks={menu.data.menu_links} />
+
     <style jsx>{`
         .site-header {
           height: 30px;

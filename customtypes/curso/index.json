@@ -1,0 +1,52 @@
+{
+  "id": "curso",
+  "label": "Curso",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "title": {
+        "config": {
+          "label": "",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        },
+        "type": "StructuredText"
+      },
+      "level": {
+        "config": {
+          "label": "Nivel",
+          "placeholder": "",
+          "options": [
+            "Primaria",
+            "Secundaria",
+            "Preparatoria",
+            "Universidad",
+            "Otro"
+          ]
+        },
+        "type": "Select"
+      },
+      "grade": {
+        "config": {
+          "label": "Grado",
+          "placeholder": "Grado de estudios",
+          "options": [
+            "primero",
+            "segundo",
+            "tercero",
+            "cuarto",
+            "quinto",
+            "sexto",
+            "septimo",
+            "octavo",
+            "No Aplica"
+          ],
+          "default_value": "primero"
+        },
+        "type": "Select"
+      }
+    }
+  }
+}

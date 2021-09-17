@@ -1,0 +1,16 @@
+{
+  "id": "b4aeff77-fdae-4dcd-8898-e0745a838497",
+  "uid": "maiores-saepe-a",
+  "type": "curso",
+  "data": {
+    "title": [
+      {
+        "type": "paragraph",
+        "text": "Ut aliqua commodo duis fugiat anim. Aliqua quis ea aliquip minim ea deserunt ipsum eiusmod qui aliqua anim cillum laborum velit. Elit est officia quis excepteur minim sunt deserunt sint voluptate ullamco est.",
+        "spans": []
+      }
+    ],
+    "level": "Preparatoria",
+    "grade": "primero"
+  }
+}

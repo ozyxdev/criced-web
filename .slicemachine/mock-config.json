@@ -10,11 +10,22 @@
     "FeaturedImage": {},
     "TextSlice": {},
     "QuoteSlice": {},
-    "MainContent": {}
+    "MainContent": {},
+    "CourseSelect": {},
+    "Nivel": {}
   },
   "_cts": {
     "page": {},
     "home-page": {},
-    "contact": {}
+    "contact": {},
+    "curso": {},
+    "nivel": {
+      "title": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
   }
 }

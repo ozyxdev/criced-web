@@ -5,6 +5,14 @@
     ]
   ],
   "plugins": [
-    "react-require"
+    "react-require",
+    [
+      "styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
+      }
+    ]
   ]
 }
