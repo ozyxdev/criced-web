@@ -7,10 +7,28 @@
     "Main": {
       "title": {
         "config": {
-          "label": "",
-          "placeholder": "",
+          "label": "Titulo",
+          "placeholder": "Titulo Completo del Curso",
           "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "single": "heading3"
+        },
+        "type": "StructuredText"
+      },
+      "shortTitle": {
+        "config": {
+          "label": "Titulo Corto",
+          "placeholder": "Titulo corto del curso",
+          "allowTargetBlank": true,
+          "single": "heading3"
+        },
+        "type": "StructuredText"
+      },
+      "description": {
+        "config": {
+          "label": "Descripcion",
+          "placeholder": "Descripción del curso",
+          "allowTargetBlank": true,
+          "single": "paragraph,strong,em"
         },
         "type": "StructuredText"
       },
@@ -46,6 +64,13 @@
           "default_value": "primero"
         },
         "type": "Select"
+      },
+      "price": {
+        "config": {
+          "label": "Costo",
+          "placeholder": "Costo del Curso"
+        },
+        "type": "Number"
       }
     }
   }

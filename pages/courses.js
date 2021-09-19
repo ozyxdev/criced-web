@@ -8,32 +8,121 @@ import styled from 'styled-components'
 import { Client } from '../prismic-configuration'
 
 import resolver from '../sm-resolver'
+import LongArrowIcon from '../components/shared/icons/long-arrow'
 
-// function useAvailableCourses() {
+const LevelsStylesContainer = styled.div`
+  display: flex;
+  justify-content: center;
 
-//   useEffect(()=>{
+  li {
+    color: var(--dark);
+    line-height: 1.2;
+    cursor: pointer;
+    display: inline;
+    padding: 0.5rem 1rem;
+    margin: 0 2.1rem;
+    position: relative;
 
-//   },[selectedLevel,selectedGrade])
-// }
+    ::after {
+      position: absolute;
+      background: var(--primary);
+      content: '';
+      bottom: -0.5rem;
+      left: 0;
+      height: 2px;
+      width: 0;
+      transition: width 200ms ease-in;
+    }
+  }
+  [data-selected='true'] {
+    color: var(--primary);
+    ::after {
+      position: absolute;
+      background: var(--primary);
+      content: '';
+      bottom: -0.5rem;
+      left: 0;
+      height: 2px;
+      width: 100%;
+    }
+  }
+`
 
-const LevelsStyles = styled.div`
-  cursor: pointer;
-  border: 1px solid #a29bfe;
-  background-color: ${(props) => (props.isChecked ? '#a29bfe' : 'white')};
-  border-radius: 4px;
-  display: inline;
-  padding: 8px 16px;
-  margin: 4px;
-  position: relative;
-  input {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.01;
-    z-index: 100;
+const GradesStylesContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  li {
+    font-size: 12px;
+    color: var(--primary);
+    line-height: 1.2;
+    cursor: pointer;
+    border: 1px solid var(--primary);
+    border-radius: 0.5rem;
+    display: inline;
+    padding: 0.5rem 1rem;
+    margin: 0 1.2rem;
+  }
+  [data-selected='true'] {
+    background-color: var(--primary);
+    color: var(--white);
+  }
+`
+
+const CardContainerStyles = styled.div`
+  margin-top: 7rem;
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+`
+
+const CourseCardStyles = styled.article`
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  background: var(--secondary-light);
+  display: flex;
+  flex-direction: column;
+
+  :nth-child(2n) {
+    background: var(--success-light);
+  }
+  :nth-child(3n) {
+    background: var(--tertiary-light);
+  }
+  :nth-child(4n) {
+    background: var(--primary-light);
+  }
+
+  p {
+    margin: 0 0 5rem 0;
+    font-size: 1.5rem;
+    line-height: 140%;
+
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .cta {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    align-self: end;
+    cursor: pointer;
+
+    svg {
+      transition: all 150ms ease-in;
+      width: 100%;
+      transform-origin: 0 50%;
+    }
+    :hover {
+      svg {
+        transform: scaleX(1.15);
+      }
+    }
   }
 `
 
@@ -53,6 +142,7 @@ function Courses({ courses }) {
     universidad: { grados: ['No Aplica'] },
     otro: { grados: ['No Aplica'] },
   }
+
   useEffect(() => {
     const { grados } = niveles[selectedLevel]
     setGrades(grados)
@@ -60,53 +150,62 @@ function Courses({ courses }) {
   }, [selectedLevel])
 
   useEffect(() => {
-    const filteredCourses = courses.filter((course) => {
-      console.log(`${course.data.level.toLowerCase()}`)
-      // return course.data.nivel.toLowerCase === selectedLevel.toLowerCase
-      return (
+    if (!courses) return
+    const filteredCourses = courses.filter(
+      (course) =>
+        // return course.data.nivel.toLowerCase === selectedLevel.toLowerCase
         course.data.grade.toLowerCase() === selectedGrade.toLowerCase() &&
         course.data.level.toLowerCase() === selectedLevel.toLowerCase()
-      )
-    })
+    )
     setAvailableCourses(filteredCourses)
-  }, [selectedGrade, selectedLevel])
+  }, [selectedGrade, selectedLevel, courses])
 
   return (
     <>
       <h1>Courses</h1>
-      <form>
-        {Object.keys(niveles).map((nivel) => (
-          <LevelsStyles key={nivel} isChecked={selectedLevel === nivel}>
-            <input
-              type="radio"
+      <LevelsStylesContainer>
+        <ul>
+          {Object.keys(niveles).map((nivel) => (
+            <li
               id={nivel}
-              value={nivel}
-              checked={selectedLevel === nivel}
-              onChange={() => setSelectedLevel(nivel)}
-            />
-            <label htmlFor={nivel}>{nivel}</label>
-          </LevelsStyles>
-        ))}
-        {grades &&
-          grades.map((grado) => (
-            <div key={grado}>
-              <input
-                type="radio"
-                id={grado}
-                value={grado}
-                checked={selectedGrade === grado}
-                onChange={() => setSelectedGrade(grado)}
-              />
-              <label htmlFor={grado}>{grado}</label>
-            </div>
+              key={nivel}
+              data-selected={selectedLevel === nivel}
+              onClick={() => setSelectedLevel(nivel)}
+            >
+              {nivel}
+            </li>
           ))}
-      </form>
+        </ul>
+      </LevelsStylesContainer>
+      <GradesStylesContainer>
+        <ul>
+          {grades &&
+            grades.map(
+              (grado) =>
+                grado !== 'No Aplica' && (
+                  <li
+                    key={grado}
+                    data-selected={selectedGrade === grado}
+                    onClick={() => setSelectedGrade(grado)}
+                  >
+                    {grado}
+                  </li>
+                )
+            )}
+        </ul>
+      </GradesStylesContainer>
 
-      {availableCourses.map((course) => (
-        <div key={course.id}>
-          <RichText render={course.data.title} />
-        </div>
-      ))}
+      <CardContainerStyles>
+        {availableCourses.map((course) => (
+          <CourseCardStyles key={course.id}>
+            <RichText render={course.data.shortTitle} />
+            <RichText render={course.data.description} />
+            <span className="cta">
+              Conocer mas <LongArrowIcon />
+            </span>
+          </CourseCardStyles>
+        ))}
+      </CardContainerStyles>
     </>
   )
 }

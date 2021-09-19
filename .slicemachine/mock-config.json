@@ -18,7 +18,26 @@
     "page": {},
     "home-page": {},
     "contact": {},
-    "curso": {},
+    "curso": {
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "shortTitle": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    },
     "nivel": {
       "title": {
         "config": {

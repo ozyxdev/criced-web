@@ -1,16 +1,31 @@
 {
-  "id": "b4aeff77-fdae-4dcd-8898-e0745a838497",
-  "uid": "maiores-saepe-a",
+  "id": "0f85ea89-b75c-493d-ada5-a344b4d02014",
+  "uid": "explicabo-blanditiis-et",
   "type": "curso",
   "data": {
     "title": [
       {
-        "type": "paragraph",
-        "text": "Ut aliqua commodo duis fugiat anim. Aliqua quis ea aliquip minim ea deserunt ipsum eiusmod qui aliqua anim cillum laborum velit. Elit est officia quis excepteur minim sunt deserunt sint voluptate ullamco est.",
+        "type": "heading3",
+        "text": "Syndicate robust blockchains",
         "spans": []
       }
     ],
-    "level": "Preparatoria",
-    "grade": "primero"
+    "shortTitle": [
+      {
+        "type": "heading3",
+        "text": "Monetize customized supply-chains",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Duis in fugiat sit irure minim veniam ad non.",
+        "spans": []
+      }
+    ],
+    "level": "Otro",
+    "grade": "primero",
+    "price": 5458
   }
 }
