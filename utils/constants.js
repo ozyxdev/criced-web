@@ -1,0 +1,55 @@
+const levelsEnum = {
+  PRIMARIA: 'primaria',
+  SECUNDARIA: 'secundaria',
+  PREPARATORIA: 'preparatoria',
+  UNIVERSIDAD: 'universidad',
+  INGLES: 'ingles',
+  OTRO: 'otros',
+}
+
+const gradesEnum = {
+  PRIMERO: 'primero',
+  SEGUNDO: 'segundo',
+  TERCERO: 'tercero',
+  CUARTO: 'cuarto',
+  QUINTO: 'quinto',
+  SEXTO: 'sexto',
+  NA: 'na',
+}
+
+const levels = {
+  [levelsEnum.PRIMARIA]: {
+    grades: [
+      gradesEnum.PRIMERO,
+      gradesEnum.SEGUNDO,
+      gradesEnum.TERCERO,
+      gradesEnum.CUARTO,
+      gradesEnum.QUINTO,
+      gradesEnum.SEXTO,
+    ],
+  },
+  [levelsEnum.SECUNDARIA]: {
+    grades: [gradesEnum.PRIMERO, gradesEnum.SEGUNDO, gradesEnum.TERCERO],
+  },
+  [levelsEnum.PREPARATORIA]: {
+    grades: [
+      gradesEnum.PRIMERO,
+      gradesEnum.SEGUNDO,
+      gradesEnum.TERCERO,
+      gradesEnum.CUARTO,
+      gradesEnum.QUINTO,
+      gradesEnum.SEXTO,
+    ],
+  },
+  [levelsEnum.UNIVERSIDAD]: {
+    grades: [gradesEnum.NA],
+  },
+  [levelsEnum.INGLES]: {
+    grades: [gradesEnum.NA],
+  },
+  [levelsEnum.OTRO]: {
+    grades: [gradesEnum.NA],
+  },
+}
+
+export { levels, gradesEnum, levelsEnum }

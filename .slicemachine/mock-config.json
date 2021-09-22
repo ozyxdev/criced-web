@@ -1,10 +1,6 @@
 {
   "slices": {
-    "BannerSlice": {
-      "default-slice": {
-        "primary": {}
-      }
-    },
+    "BannerSlice": {},
     "FullWidthImage": {},
     "ImageGallery": {},
     "FeaturedImage": {},
@@ -12,7 +8,8 @@
     "QuoteSlice": {},
     "MainContent": {},
     "CourseSelect": {},
-    "Nivel": {}
+    "Nivel": {},
+    "CourseMenu": {}
   },
   "_cts": {
     "page": {},

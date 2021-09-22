@@ -1,15 +1,15 @@
 {
-  "id": "main_content",
+  "id": "course_menu",
   "type": "SharedSlice",
-  "name": "MainContent",
-  "description": "MainContent",
+  "name": "CourseMenu",
+  "description": "CourseMenu",
   "variations": [
     {
       "id": "default-slice",
       "name": "Default slice",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "MainContent",
+      "description": "CourseMenu",
       "primary": {
         "title": {
           "type": "StructuredText",

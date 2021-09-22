@@ -4,5 +4,8 @@
     "titleBar.inactiveForeground": "#f1f2f6CC",
     "titleBar.activeBackground": "#55efc4",
     "titleBar.inactiveBackground": "#55efc4CC"
-  }
+  },
+  "cSpell.words": [
+    "Cursos"
+  ]
 }
