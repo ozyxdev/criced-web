@@ -1,0 +1,77 @@
+{
+  "id": "curso",
+  "label": "Curso",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "title": {
+        "config": {
+          "label": "Titulo",
+          "placeholder": "Titulo Completo del Curso",
+          "allowTargetBlank": true,
+          "single": "heading3"
+        },
+        "type": "StructuredText"
+      },
+      "shortTitle": {
+        "config": {
+          "label": "Titulo Corto",
+          "placeholder": "Titulo corto del curso",
+          "allowTargetBlank": true,
+          "single": "heading3"
+        },
+        "type": "StructuredText"
+      },
+      "description": {
+        "config": {
+          "label": "Descripcion",
+          "placeholder": "Descripción del curso",
+          "allowTargetBlank": true,
+          "single": "paragraph,strong,em"
+        },
+        "type": "StructuredText"
+      },
+      "level": {
+        "config": {
+          "label": "Nivel",
+          "placeholder": "",
+          "options": [
+            "Primaria",
+            "Secundaria",
+            "Preparatoria",
+            "Universidad",
+            "Otro"
+          ]
+        },
+        "type": "Select"
+      },
+      "grade": {
+        "config": {
+          "label": "Grado",
+          "placeholder": "Grado de estudios",
+          "options": [
+            "primero",
+            "segundo",
+            "tercero",
+            "cuarto",
+            "quinto",
+            "sexto",
+            "septimo",
+            "octavo",
+            "No Aplica"
+          ],
+          "default_value": "primero"
+        },
+        "type": "Select"
+      },
+      "price": {
+        "config": {
+          "label": "Costo",
+          "placeholder": "Costo del Curso"
+        },
+        "type": "Number"
+      }
+    }
+  }
+}

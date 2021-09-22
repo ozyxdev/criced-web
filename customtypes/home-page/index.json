@@ -17,22 +17,16 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "full_width_image": {
-              "type": "SharedSlice"
-            },
-            "featured_image": {
-              "type": "SharedSlice"
-            },
             "banner_slice": {
-              "type": "SharedSlice"
-            },
-            "image_gallery": {
               "type": "SharedSlice"
             },
             "quote_slice": {
               "type": "SharedSlice"
             },
             "text_slice": {
+              "type": "SharedSlice"
+            },
+            "course_menu": {
               "type": "SharedSlice"
             }
           }

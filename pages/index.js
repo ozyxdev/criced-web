@@ -1,17 +1,31 @@
 import SliceZone from 'next-slicezone'
 import { useGetStaticProps } from 'next-slicezone/hooks'
+import Prismic from '@prismicio/client'
 import { Client } from '../prismic-configuration'
 
 import resolver from '../sm-resolver'
+import { getAllCourses } from '../utils/api'
 
-export default function Home(props) {
-  console.log('props', props)
-  return <SliceZone {...props} resolver={resolver} />
+export default function Home({ homepage }) {
+  return <SliceZone {...homepage} resolver={resolver} />
 }
 
-// Fetch content from prismic
-export const getStaticProps = useGetStaticProps({
-  client: Client(),
-  type: 'home-page',
-  queryType: 'single',
-})
+export const getStaticProps = async (...args) => {
+  // Same useGetStaticProps call
+  const homepage = await useGetStaticProps({
+    client: Client(),
+    type: 'home-page',
+    queryType: 'single',
+  })(...args)
+  console.log('homepage', homepage)
+
+  // Query for courses data
+  const courses = await getAllCourses()
+
+  return {
+    props: {
+      homepage: homepage.props,
+      courses,
+    },
+  }
+}

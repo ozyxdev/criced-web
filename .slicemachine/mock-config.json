@@ -1,20 +1,47 @@
 {
   "slices": {
-    "BannerSlice": {
-      "default-slice": {
-        "primary": {}
-      }
-    },
+    "BannerSlice": {},
     "FullWidthImage": {},
     "ImageGallery": {},
     "FeaturedImage": {},
     "TextSlice": {},
     "QuoteSlice": {},
-    "MainContent": {}
+    "MainContent": {},
+    "CourseSelect": {},
+    "Nivel": {},
+    "CourseMenu": {}
   },
   "_cts": {
     "page": {},
     "home-page": {},
-    "contact": {}
+    "contact": {},
+    "curso": {
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "shortTitle": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    },
+    "nivel": {
+      "title": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
   }
 }

@@ -1,4 +1,3 @@
-import '../styles/globals.css'
 import React from 'react'
 import NextApp from 'next/app'
 import { Client } from '../prismic-configuration'
@@ -17,7 +16,6 @@ export default class MyApp extends NextApp {
 
   render() {
     const { Component, pageProps, props } = this.props
-    console.log('pageProps', pageProps)
     return (
       <Layout menu={props.menu}>
         <Component {...pageProps} />

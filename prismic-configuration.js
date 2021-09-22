@@ -41,10 +41,6 @@ export const Router = {
       type: 'home-page',
       path: '/',
     },
-    {
-      type: 'contact',
-      path: '/contact',
-    },
   ],
   href: (type) => {
     const route = Router.routes.find((r) => r.type === type)

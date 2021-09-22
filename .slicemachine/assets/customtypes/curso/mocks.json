@@ -1,0 +1,31 @@
+{
+  "id": "0f85ea89-b75c-493d-ada5-a344b4d02014",
+  "uid": "explicabo-blanditiis-et",
+  "type": "curso",
+  "data": {
+    "title": [
+      {
+        "type": "heading3",
+        "text": "Syndicate robust blockchains",
+        "spans": []
+      }
+    ],
+    "shortTitle": [
+      {
+        "type": "heading3",
+        "text": "Monetize customized supply-chains",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Duis in fugiat sit irure minim veniam ad non.",
+        "spans": []
+      }
+    ],
+    "level": "Otro",
+    "grade": "primero",
+    "price": 5458
+  }
+}

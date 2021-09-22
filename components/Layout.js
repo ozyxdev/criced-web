@@ -1,6 +1,14 @@
 import React from 'react'
 import Head from 'next/head'
+import styled from 'styled-components'
 import Header from './Header'
+import GlobalStyles from './styles/GlobalStyles'
+import TypographyStyles from './styles/Typography'
+
+const MainContainer = styled.main`
+  max-width: var(--max-width);
+  margin: 0 auto;
+`
 
 const Layout = ({ children, menu }) => (
   <div>
@@ -8,7 +16,9 @@ const Layout = ({ children, menu }) => (
       <title> Prismic Next.js Multi Page Website </title>
     </Head>
     <Header menu={menu} />
-    <main>{children}</main>
+    <GlobalStyles />
+    <TypographyStyles />
+    <MainContainer>{children}</MainContainer>
   </div>
 )
 
