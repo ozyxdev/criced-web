@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
 
 const TypographyStyles = createGlobalStyle`
+  p {
+    line-height: 120%;
+  }
+  
   h1,
   h2,
   h3,
@@ -9,7 +13,8 @@ const TypographyStyles = createGlobalStyle`
   }
 
   h1 {
-    font-size: 6rem;
+    font-size: 8rem;
+    line-height: 100%;
   }
 
   h2 {

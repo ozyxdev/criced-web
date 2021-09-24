@@ -3,35 +3,135 @@
     "variation": "default-slice",
     "name": "Default slice",
     "slice_type": "banner_slice",
-    "items": [],
+    "items": [
+      {
+        "image": {
+          "dimensions": {
+            "width": 115,
+            "height": 405
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=115&h=405&fit=crop",
+          "mobile": {
+            "dimensions": {
+              "width": 115,
+              "height": 70
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=115&h=70&fit=crop"
+          }
+        },
+        "description": [
+          {
+            "type": "heading2",
+            "text": "Enhance leading-edge e-commerce",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 115,
+            "height": 405
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=115&h=405&fit=crop",
+          "mobile": {
+            "dimensions": {
+              "width": 115,
+              "height": 70
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=115&h=70&fit=crop"
+          }
+        },
+        "description": [
+          {
+            "type": "heading2",
+            "text": "Extend cross-media e-services",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 115,
+            "height": 405
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=115&h=405&fit=crop",
+          "mobile": {
+            "dimensions": {
+              "width": 115,
+              "height": 70
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=115&h=70&fit=crop"
+          }
+        },
+        "description": [
+          {
+            "type": "heading2",
+            "text": "Revolutionize B2C metrics",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 115,
+            "height": 405
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=115&h=405&fit=crop",
+          "mobile": {
+            "dimensions": {
+              "width": 115,
+              "height": 70
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=115&h=70&fit=crop"
+          }
+        },
+        "description": [
+          {
+            "type": "heading2",
+            "text": "E-enable sticky portals",
+            "spans": []
+          }
+        ]
+      }
+    ],
     "primary": {
       "title": [
         {
           "type": "heading1",
-          "text": "Strategize transparent blockchains",
+          "text": "Redefine sexy synergies",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Eiusmod deserunt sit est cupidatat do et duis consequat et occaecat. Aliqua dolore eiusmod non aute veniam ad laboris Lorem consectetur fugiat officia exercitation. Amet ullamco duis cillum do eiusmod est ad deserunt pariatur.",
+          "text": "Consectetur culpa esse tempor do eu ex non reprehenderit reprehenderit nulla incididunt do ad voluptate. In ex nulla enim irure tempor. In nostrud laborum voluptate minim aute amet tempor.",
           "spans": []
         }
       ],
-      "link": {
+      "ctaLabel": "strategize visionary e-markets",
+      "cta": {
         "link_type": "Web",
-        "url": "https://prismic.io"
-      },
-      "linkLabel": "disintermediate real-time experiences",
-      "background": {
-        "dimensions": {
-          "width": 900,
-          "height": 500
-        },
-        "alt": "Placeholder image",
-        "copyright": null,
-        "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+        "url": "https://slicemachine.dev"
       }
     }
   }

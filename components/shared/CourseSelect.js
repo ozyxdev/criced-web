@@ -130,7 +130,6 @@ const CourseCardStyles = styled.article`
 `
 
 function CourseSelect({ courses }) {
-  console.log('courses', courses)
   const [selectedLevel, setSelectedLevel] = useState('primaria')
   const [selectedGrade, setSelectedGrade] = useState('primero')
   const [availableCourses, setAvailableCourses] = useState([])

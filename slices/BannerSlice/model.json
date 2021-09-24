@@ -14,45 +14,66 @@
         "title": {
           "type": "StructuredText",
           "config": {
-            "single": "heading1",
-            "label": "Title",
-            "placeholder": "This is where it all begins..."
+            "label": "Título",
+            "placeholder": "Titulo de Banner",
+            "allowTargetBlank": true,
+            "single": "heading1"
           }
         },
         "description": {
           "type": "StructuredText",
           "config": {
-            "single": "paragraph",
-            "label": "Description",
-            "placeholder": "A nice description of your feature"
+            "label": "Texto secundario",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
           }
         },
-        "link": {
+        "ctaLabel": {
           "config": {
-            "label": "",
+            "label": "Texto de botón",
+            "placeholder": "ej. Contáctanos"
+          },
+          "type": "Text"
+        },
+        "cta": {
+          "config": {
+            "label": "Link de botón",
             "placeholder": "",
             "select": "web",
             "allowTargetBlank": false
           },
           "type": "Link"
-        },
-        "linkLabel": {
-          "config": {
-            "label": "",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
-        "background": {
-          "config": {
-            "label": "",
-            "constraint": {},
-            "thumbnails": []
-          },
-          "type": "Image"
         }
       },
-      "items": {}
+      "items": {
+        "image": {
+          "config": {
+            "label": "Imagen",
+            "constraint": {
+              "width": 115,
+              "height": 405
+            },
+            "thumbnails": [
+              {
+                "name": "mobile",
+                "width": 115,
+                "height": 70
+              }
+            ]
+          },
+          "type": "Image"
+        },
+        "description": {
+          "config": {
+            "label": "Descripción",
+            "placeholder": "ej. Primaria",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          },
+          "type": "StructuredText"
+        }
+      }
     }
   ]
 }
