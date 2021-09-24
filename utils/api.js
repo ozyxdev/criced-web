@@ -1,7 +1,6 @@
 import Prismic from 'prismic-javascript'
 
 const REPOSITORY = process.env.PRISMIC_REPOSITORY_NAME
-console.log('REPOSITORY', REPOSITORY)
 const REF_API_URL = `https://${REPOSITORY}.cdn.prismic.io/api/v2`
 const GRAPHQL_API_URL = `https://${REPOSITORY}.cdn.prismic.io/graphql`
 // export const API_URL = 'https://your-repo-name.cdn.prismic.io/api/v2'

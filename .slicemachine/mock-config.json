@@ -1,6 +1,31 @@
 {
   "slices": {
-    "BannerSlice": {},
+    "BannerSlice": {
+      "default-slice": {
+        "items": {
+          "description": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        },
+        "primary": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
     "FullWidthImage": {},
     "ImageGallery": {},
     "FeaturedImage": {},

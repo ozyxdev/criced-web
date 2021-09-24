@@ -28,6 +28,7 @@ const GlobalStyles = createGlobalStyle`
 
     // Colors
     --primary: #5956E9;
+    --primary40: rgba(89, 86, 233, 0.4);
     --primary-light: hsla(242, 76%, 92%, 0.7);
     --secondary: #F9B8C3;
     --secondary-light: #FDECEF;
@@ -46,12 +47,12 @@ const GlobalStyles = createGlobalStyle`
       sans-serif;
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
     font-size: 2rem;
     letter-spacing: 0.5px;
     line-height: 2;
     background: var(--color-background);
     color: var(--dark);
+    margin: 0 2rem;
   }
 
   body.modal-open {

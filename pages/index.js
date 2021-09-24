@@ -17,7 +17,6 @@ export const getStaticProps = async (...args) => {
     type: 'home-page',
     queryType: 'single',
   })(...args)
-  console.log('homepage', homepage)
 
   // Query for courses data
   const courses = await getAllCourses()

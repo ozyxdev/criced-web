@@ -15,7 +15,7 @@ const Layout = ({ children, menu }) => (
     <Head>
       <title> Prismic Next.js Multi Page Website </title>
     </Head>
-    <Header menu={menu} />
+    {/* <Header menu={menu} /> */}
     <GlobalStyles />
     <TypographyStyles />
     <MainContainer>{children}</MainContainer>
