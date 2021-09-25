@@ -1,0 +1,185 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "services_slice",
+    "items": [
+      {
+        "title": [
+          {
+            "type": "heading3",
+            "text": "Enable viral ROI",
+            "spans": []
+          }
+        ],
+        "subtitle": [
+          {
+            "type": "heading4",
+            "text": "Reintermediate bricks-and-clicks communities",
+            "spans": []
+          }
+        ],
+        "icon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
+        },
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Sit aute cupidatat dolor. Labore nulla ad laboris esse mollit adipisicing. Eiusmod eiusmod veniam magna enim.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "title": [
+          {
+            "type": "heading3",
+            "text": "Cultivate collaborative technologies",
+            "spans": []
+          }
+        ],
+        "subtitle": [
+          {
+            "type": "heading4",
+            "text": "Target sticky methodologies",
+            "spans": []
+          }
+        ],
+        "icon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&h=500&fit=crop"
+        },
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Deserunt enim ad fugiat.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "title": [
+          {
+            "type": "heading3",
+            "text": "Redefine efficient e-services",
+            "spans": []
+          }
+        ],
+        "subtitle": [
+          {
+            "type": "heading4",
+            "text": "Enable user-centric communities",
+            "spans": []
+          }
+        ],
+        "icon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
+        },
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Laboris dolore excepteur minim amet culpa minim. Et veniam ullamco commodo eu excepteur tempor sint. Officia ipsum ea sit pariatur mollit.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "title": [
+          {
+            "type": "heading3",
+            "text": "E-enable compelling bandwidth",
+            "spans": []
+          }
+        ],
+        "subtitle": [
+          {
+            "type": "heading4",
+            "text": "Syndicate dynamic e-services",
+            "spans": []
+          }
+        ],
+        "icon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+        },
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Aliquip exercitation veniam laborum duis ipsum officia aliquip ad tempor duis deserunt. Consequat aute irure non laborum laboris ipsum consectetur.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "title": [
+          {
+            "type": "heading3",
+            "text": "Utilize magnetic paradigms",
+            "spans": []
+          }
+        ],
+        "subtitle": [
+          {
+            "type": "heading4",
+            "text": "Generate B2B paradigms",
+            "spans": []
+          }
+        ],
+        "icon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e?w=900&h=500&fit=crop"
+        },
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Duis voluptate anim anim. Laboris minim ullamco excepteur ipsum culpa laborum non sunt. Cillum proident adipisicing dolor sint proident in enim dolore id.",
+            "spans": []
+          }
+        ]
+      }
+    ],
+    "primary": {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Innovate real-time vortals",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Sint veniam dolore nulla. Deserunt do laborum ex incididunt amet commodo sunt adipisicing ad incididunt est.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

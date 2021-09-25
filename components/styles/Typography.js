@@ -19,6 +19,7 @@ const TypographyStyles = createGlobalStyle`
 
   h2 {
     font-size: 3.6rem;
+    line-height: 120%;
     font-weight: normal;
   }
   
