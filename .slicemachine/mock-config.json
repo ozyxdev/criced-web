@@ -34,7 +34,64 @@
     "MainContent": {},
     "CourseSelect": {},
     "Nivel": {},
-    "CourseMenu": {}
+    "CourseMenu": {},
+    "ServicesSlice": {
+      "default-slice": {
+        "items": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "subtitle": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        },
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "ContactSlice": {
+      "default-slice": {
+        "primary": {
+          "address": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "phone": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "email": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {}
+      }
+    }
   },
   "_cts": {
     "page": {},

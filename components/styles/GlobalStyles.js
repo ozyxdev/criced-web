@@ -100,6 +100,16 @@ const GlobalStyles = createGlobalStyle`
     margin: auto 0;
   }
 
+  .section-header {
+    text-align: center;
+    grid-column: 1/-1;
+
+    p {
+      max-width: 80%;
+      margin: 1.5rem auto 0;
+    }
+  }
+
   .text-gradient {
     transition: background-position 0.5s ease-out, color 0.5s ease-out;
     text-decoration: none;
