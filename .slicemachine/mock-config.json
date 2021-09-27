@@ -1,31 +1,6 @@
 {
   "slices": {
-    "BannerSlice": {
-      "default-slice": {
-        "items": {
-          "description": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          }
-        },
-        "primary": {
-          "description": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          },
-          "title": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          }
-        }
-      }
-    },
+    "BannerSlice": {},
     "FullWidthImage": {},
     "ImageGallery": {},
     "FeaturedImage": {},
@@ -35,16 +10,12 @@
     "CourseSelect": {},
     "Nivel": {},
     "CourseMenu": {},
-    "ServicesSlice": {
+    "ServicesSlice": {},
+    "ContactSlice": {},
+    "HeaderSlice": {
       "default-slice": {
-        "items": {
+        "primary": {
           "title": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          },
-          "subtitle": {
             "config": {
               "patternType": "HEADING",
               "blocks": 1
@@ -56,40 +27,7 @@
               "blocks": 1
             }
           }
-        },
-        "primary": {
-          "title": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          }
         }
-      }
-    },
-    "ContactSlice": {
-      "default-slice": {
-        "primary": {
-          "address": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          },
-          "phone": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          },
-          "email": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          }
-        },
-        "items": {}
       }
     }
   },

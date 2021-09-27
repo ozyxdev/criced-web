@@ -52,4 +52,11 @@ const levels = {
   },
 }
 
-export { levels, gradesEnum, levelsEnum }
+const CONTACT_FORM = [
+  { label: 'Nombre', placeholder: 'Juan Doe' },
+  { label: 'Email', placeholder: 'email@example.com' },
+  { label: 'Teléfono', placeholder: '444 123 4567' },
+  { label: 'Mensaje', placeholder: 'Tu Mensaje...' },
+]
+
+export { levels, gradesEnum, levelsEnum, CONTACT_FORM }
