@@ -28,6 +28,12 @@
             },
             "course_menu": {
               "type": "SharedSlice"
+            },
+            "contact_slice": {
+              "type": "SharedSlice"
+            },
+            "services_slice": {
+              "type": "SharedSlice"
             }
           }
         }

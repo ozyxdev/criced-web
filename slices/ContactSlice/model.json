@@ -1,0 +1,81 @@
+{
+  "id": "contact_slice",
+  "type": "SharedSlice",
+  "name": "ContactSlice",
+  "description": "ContactSlice",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ContactSlice",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph",
+            "label": "Description",
+            "placeholder": "A nice description of your feature"
+          }
+        },
+        "cta": {
+          "config": {
+            "label": "Boton de acción",
+            "placeholder": "Enviar mensaje"
+          },
+          "type": "Text"
+        },
+        "email": {
+          "config": {
+            "label": "Email CRICED",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "phone": {
+          "config": {
+            "label": "Teléfono CRICED",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "address": {
+          "config": {
+            "label": "Dirección CRICED",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      },
+      "items": {
+        "socialIcon": {
+          "config": {
+            "label": "Icono redes sociales",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "link": {
+          "config": {
+            "label": "Link redes sociales",
+            "placeholder": "",
+            "select": "web",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        }
+      }
+    }
+  ]
+}

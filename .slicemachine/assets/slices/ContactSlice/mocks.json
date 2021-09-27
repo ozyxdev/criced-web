@@ -12,40 +12,40 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"
-        },
-        "link": {
-          "link_type": "Web",
-          "url": "http://google.com"
-        }
-      },
-      {
-        "socialIcon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=900&h=500&fit=crop"
-        },
-        "link": {
-          "link_type": "Web",
-          "url": "http://google.com"
-        }
-      },
-      {
-        "socialIcon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
           "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
         },
         "link": {
           "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "socialIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
+        },
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "socialIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
+        },
+        "link": {
+          "link_type": "Web",
           "url": "http://google.com"
         }
       },
@@ -57,7 +57,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
         },
         "link": {
           "link_type": "Web",
@@ -68,40 +68,22 @@
     "primary": {
       "title": [
         {
-          "type": "heading1",
-          "text": "Enable B2C relationships",
+          "type": "heading3",
+          "text": "Cultivate synergistic e-commerce",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Ex ad elit aliqua culpa commodo quis incididunt occaecat mollit excepteur nulla pariatur minim.",
+          "text": "Consectetur exercitation qui velit aliquip eu cillum.",
           "spans": []
         }
       ],
-      "address": [
-        {
-          "type": "paragraph",
-          "text": "Consequat aliqua incididunt exercitation. Laborum in dolor consectetur officia.",
-          "spans": []
-        }
-      ],
-      "phone": [
-        {
-          "type": "paragraph",
-          "text": "Voluptate eu nulla fugiat nostrud et duis do reprehenderit nulla sunt dolore ex mollit id.",
-          "spans": []
-        }
-      ],
-      "email": [
-        {
-          "type": "paragraph",
-          "text": "Non fugiat adipisicing proident Lorem eiusmod adipisicing aliquip laboris enim ut veniam nostrud cupidatat. Dolor labore exercitation nulla laboris anim ex eu pariatur cupidatat ex proident.",
-          "spans": []
-        }
-      ],
-      "cta": "enhance ubiquitous networks"
+      "cta": "enhance impactful channels",
+      "email": "recontextualize revolutionary solutions",
+      "phone": "monetize integrated technologies",
+      "address": "aggregate intuitive partnerships"
     }
   }
 ]
