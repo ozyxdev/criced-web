@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Header from './Header'
 import GlobalStyles from './styles/GlobalStyles'
 import TypographyStyles from './styles/Typography'
+import ExitPreviewButton from './shared/ExitPreviewButton'
 
 const MainContainer = styled.main`
   max-width: var(--max-width);
@@ -19,6 +20,7 @@ const Layout = ({ children, menu }) => (
     <GlobalStyles />
     <TypographyStyles />
     <MainContainer>{children}</MainContainer>
+    <ExitPreviewButton />
   </div>
 )
 

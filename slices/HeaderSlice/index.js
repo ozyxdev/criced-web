@@ -1,18 +1,6 @@
 import React from 'react'
 import { RichText } from 'prismic-reactjs'
-import styled from 'styled-components'
-
-const HeaderStyles = styled.section`
-  margin-top: 4rem;
-  text-align: center;
-
-  @media (min-width: 768px) {
-    p {
-      width: 80%;
-      margin: 1rem auto;
-    }
-  }
-`
+import { HeaderStyles } from '../../components/shared/HeaderStyles'
 
 const HeaderSlice = ({ slice }) => (
   <HeaderStyles>
