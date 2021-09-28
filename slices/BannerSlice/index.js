@@ -1,6 +1,5 @@
 import React from 'react'
 import { RichText, Link, Date as ParseDate } from 'prismic-reactjs'
-import styled from 'styled-components'
 import SendIcon from '../../components/shared/icons/send'
 import {
   BannerContainerStyles,
@@ -12,9 +11,7 @@ export default function BannerSlice({ slice }) {
     <BannerContainerStyles>
       <div className="container">
         <div className="content-container">
-          <h1 className="banner-title">
-            {RichText.asText(slice.primary.title)}
-          </h1>
+          <h1>{RichText.asText(slice.primary.title)}</h1>
           <div className="banner-description">
             <RichText render={slice.primary.description} />
           </div>
