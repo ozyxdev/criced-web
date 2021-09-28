@@ -27,7 +27,11 @@ const NavigationStyles = styled.div`
   text-transform: capitalize;
   display: flex;
   background: var(--white);
-  margin: calc(100vh - 40rem) 3rem 0 3rem;
+  /* margin: 55vh 3rem 0 3rem; */
+  position: absolute;
+  width: 90%;
+  margin-left: 5%;
+  bottom: 5rem;
   height: auto;
   border-radius: 2rem;
   padding: 2rem 2rem 10rem;
@@ -99,6 +103,8 @@ const NavigationStyles = styled.div`
   }
 
   @media (min-width: 480px) {
+    position: relative;
+    bottom: auto;
     width: 100%;
     transform: translateY(0);
     background: none;
