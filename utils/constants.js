@@ -59,4 +59,27 @@ const CONTACT_FORM = [
   { label: 'Mensaje', placeholder: 'Tu Mensaje...' },
 ]
 
-export { levels, gradesEnum, levelsEnum, CONTACT_FORM }
+const MENU_ITEMS = [
+  {
+    text: 'inicio',
+    path: '/',
+  },
+  {
+    text: 'cursos',
+    path: '/cursos',
+  },
+  {
+    text: 'nosotros',
+    path: '/nosotros',
+  },
+  {
+    text: 'ayuda',
+    path: '/ayuda',
+  },
+  {
+    text: 'contacto',
+    path: '/contacto',
+  },
+]
+
+export { levels, gradesEnum, levelsEnum, CONTACT_FORM, MENU_ITEMS }

@@ -5,6 +5,7 @@ const BannerContainerStyles = styled.section`
 
   .container {
     display: grid;
+    grid-gap: 1rem;
     grid-template-columns: 2fr 1fr;
   }
 
@@ -97,7 +98,7 @@ const BannerImageStyles = styled.div`
       right: auto;
       font-size: 2.75rem;
       background: none;
-      width: 100vw;
+      width: 400px;
       max-width: 100vh;
     }
 

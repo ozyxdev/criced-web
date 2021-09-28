@@ -33,10 +33,12 @@ const GlobalStyles = createGlobalStyle`
     --secondary: #F9B8C3;
     --secondary-light: #FDECEF;
     --tertiary: #FFDD60;
+    --tertiary-light: #FFF2C2;
     --tertiary-light: #FFF6D6;
     --success: #41D3BD;
     --success-light: #DEF8F4;
     --dark: #0E0E2C;
+    --off-dark: #0D004D;
     --white: #FBFCFE;
     --off-white: #EEF2F5;
 
@@ -136,6 +138,13 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
+  /* .modal-open  {
+    body {
+      overflow-y: hidden;
+      position: fixed;
+      width: auto;
+    }
+  } */
 `
 
 export default GlobalStyles

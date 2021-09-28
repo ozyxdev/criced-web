@@ -28,6 +28,10 @@ const TypographyStyles = createGlobalStyle`
     line-height: 120%;
     font-weight: normal;
   }
+
+  ul {
+    margin: 0;
+  }
 `
 
 export default TypographyStyles
