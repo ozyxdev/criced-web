@@ -25,7 +25,6 @@ function Navigation() {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
-    console.log('menuOpen', menuOpen)
   }
 
   useEffect(() => {

@@ -10,22 +10,31 @@ const prismicRepoName = /([a-zA-Z0-9-]+)?(\.cdn)?\.prismic\.io/.exec(
 )[1] // Regex to get repo ID
 export default class extends Document {
   static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx)
+    const sheet = new ServerStyleSheet()
+    const originalRenderPage = ctx.renderPage
+
     await createResolver()
 
-    // styled-components
-    // Step 1: Create an instance of ServerStyleSheet
-    const sheet = new ServerStyleSheet()
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: (App) => (props) =>
+            sheet.collectStyles(<App {...props} />),
+        })
 
-    // Step 2: Retrieve styles from components in the page
-    const page = ctx.renderPage(
-      (App) => (props) => sheet.collectStyles(<App {...props} />)
-    )
-
-    // Step 3: Extract the styles as <style> tags
-    const styleTags = sheet.getStyleElement()
-
-    return { ...page, ...styleTags, ...initialProps }
+      const initialProps = await Document.getInitialProps(ctx)
+      return {
+        ...initialProps,
+        styles: (
+          <>
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          </>
+        ),
+      }
+    } finally {
+      sheet.seal()
+    }
   }
 
   render() {
