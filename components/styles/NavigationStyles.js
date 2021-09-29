@@ -224,6 +224,10 @@ const MenuIconStyles = styled.div`
   svg {
     fill: var(--off-white);
   }
+
+  @media (min-width: 480px) {
+    display: none;
+  }
 `
 
 export { HeaderStyles, NavigationStyles, ActionBarStyles, MenuIconStyles }
