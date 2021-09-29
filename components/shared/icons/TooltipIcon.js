@@ -1,4 +1,4 @@
-export default function TooltipIcon({ fill }) {
+export default function TooltipIcon() {
   return (
     <>
       <svg

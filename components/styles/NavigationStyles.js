@@ -177,7 +177,6 @@ const NavigationStyles = styled.div`
 
 const ActionBarStyles = styled.div`
   pointer-events: all;
-  z-index: 100000;
   background: var(--off-white);
   position: relative;
   display: flex;
