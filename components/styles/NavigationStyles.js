@@ -27,14 +27,13 @@ const NavigationStyles = styled.div`
   text-transform: capitalize;
   display: flex;
   background: var(--white);
-  /* margin: 55vh 3rem 0 3rem; */
   position: absolute;
   width: 90%;
   margin-left: 5%;
-  bottom: 5rem;
+  bottom: 15rem;
   height: auto;
   border-radius: 2rem;
-  padding: 2rem 2rem 10rem;
+  padding: 2rem 2rem;
 
   flex-direction: column;
 
@@ -43,6 +42,16 @@ const NavigationStyles = styled.div`
 
   .logo-container {
     display: none;
+  }
+
+  .tooltip {
+    position: absolute;
+    width: 5rem;
+    bottom: -2.5rem;
+    right: 3rem;
+    path {
+      fill: var(--white);
+    }
   }
 
   ul {
@@ -170,8 +179,7 @@ const ActionBarStyles = styled.div`
   pointer-events: all;
   z-index: 100000;
   background: var(--off-white);
-  position: absolute;
-  bottom: 0;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -181,26 +189,7 @@ const ActionBarStyles = styled.div`
     0px 0px 80px rgba(0, 0, 0, 0.07);
 
   svg {
-    height: 5rem;
-    width: auto;
-  }
-
-  .cta {
-    cursor: pointer;
-    background-color: var(--primary);
-    border: 3px solid var(--primary-light);
-    width: 6rem;
     height: 6rem;
-    line-height: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    padding: 1.1rem;
-
-    svg {
-      fill: var(--off-white);
-    }
   }
 
   @media (min-width: 480px) {
@@ -208,4 +197,33 @@ const ActionBarStyles = styled.div`
   }
 `
 
-export { HeaderStyles, NavigationStyles, ActionBarStyles }
+const MenuIconStyles = styled.div`
+  pointer-events: all;
+  position: absolute;
+  transition: all 300ms ease-in-out;
+  bottom: 3rem;
+  right: 3rem;
+  cursor: pointer;
+  background: ${(props) =>
+    props.isOpen ? 'var(--secondary)' : 'var(--success)'};
+  border: 3px solid
+    ${(props) =>
+      props.isOpen ? 'var(--secondary-light)' : 'var(--success-light)'};
+  width: 8rem;
+  height: 8rem;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 1.1rem;
+  box-shadow: 0px 0px 3.6px rgba(0, 0, 0, 0.024),
+    0px 0px 10px rgba(0, 0, 0, 0.035), 0px 0px 24.1px rgba(0, 0, 0, 0.046),
+    0px 0px 80px rgba(0, 0, 0, 0.07);
+
+  svg {
+    fill: var(--off-white);
+  }
+`
+
+export { HeaderStyles, NavigationStyles, ActionBarStyles, MenuIconStyles }

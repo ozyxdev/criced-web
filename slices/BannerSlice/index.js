@@ -1,10 +1,11 @@
 import React from 'react'
 import { RichText, Link, Date as ParseDate } from 'prismic-reactjs'
-import SendIcon from '../../components/shared/icons/send'
+import PlaneIcon from '../../components/shared/icons/PlaneIcon'
 import {
   BannerContainerStyles,
   BannerImageStyles,
 } from '../../components/styles/BannerStyles'
+import { ButtonPrimary } from '../../components/styles/Button'
 
 export default function BannerSlice({ slice }) {
   return (
@@ -15,10 +16,12 @@ export default function BannerSlice({ slice }) {
           <div className="banner-description">
             <RichText render={slice.primary.description} />
           </div>
-          <a href={Link.url(slice.primary.cta)}>
-            <span>{slice.primary.ctaLabel}</span>
-            <SendIcon />
-          </a>
+          <ButtonPrimary>
+            <a href={Link.url(slice.primary.cta)}>
+              <span>{slice.primary.ctaLabel}</span>
+              <PlaneIcon />
+            </a>
+          </ButtonPrimary>
         </div>
         <div className="image-container">
           {slice?.items?.map((item, i) => (

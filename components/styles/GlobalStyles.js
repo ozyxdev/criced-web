@@ -2,7 +2,10 @@ import { createGlobalStyle } from 'styled-components'
 import { normalize } from 'styled-normalize'
 
 const GlobalStyles = createGlobalStyle`
-  
+  /* debug */
+  /* * { border: 1px solid black;}  */
+
+
   ${normalize}
 
   /* @font-face {
@@ -31,7 +34,7 @@ const GlobalStyles = createGlobalStyle`
     --primary40: rgba(89, 86, 233, 0.4);
     --primary-light: hsla(242, 76%, 92%, 0.7);
     --secondary: #F9B8C3;
-    --secondary-light: #FDECEF;
+    --secondary-light: rgba(252, 217, 223, 1);
     --tertiary: #FFDD60;
     --tertiary-light: #FFF2C2;
     --tertiary-light: #FFF6D6;
@@ -55,7 +58,9 @@ const GlobalStyles = createGlobalStyle`
     background: var(--color-background);
     color: var(--dark);
     margin: 0 2rem;
+
   }
+  
 
   body.modal-open {
     overflow: hidden;
