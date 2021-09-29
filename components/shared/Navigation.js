@@ -12,7 +12,11 @@ import {
   HeaderStyles,
   NavigationStyles,
   ActionBarStyles,
+  MenuIconStyles,
 } from '../styles/NavigationStyles'
+import { ButtonPrimaryRounded } from '../styles/Button'
+import PlaneIcon from './icons/PlaneIcon'
+import TooltipIcon from './icons/TooltipIcon'
 
 function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -21,6 +25,7 @@ function Navigation() {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
+    console.log('menuOpen', menuOpen)
   }
 
   useEffect(() => {
@@ -30,39 +35,52 @@ function Navigation() {
   }, [menuOpen, isOverMobile])
 
   return (
-    <HeaderStyles
-      isOpen={menuOpen}
-      className="container-full-width"
-      onClick={toggleMenu}
-    >
-      <NavigationStyles isOpen={menuOpen}>
-        <div className="logo-container">
-          <LogoColor />
-        </div>
-        <ul>
-          {MENU_ITEMS.map((menuItem) => (
-            <Link href={menuItem.path} key={menuItem.text}>
-              <li data-active={router.asPath === menuItem.path}>
-                <>
-                  <a>
-                    {menuItem.text}
-                    <div className="menu-cta">
-                      <ArrowRight />
-                    </div>
-                  </a>
-                </>
-              </li>
-            </Link>
-          ))}
-        </ul>
-      </NavigationStyles>
+    <>
+      <HeaderStyles
+        isOpen={menuOpen}
+        className="container-full-width"
+        onClick={toggleMenu}
+      >
+        <NavigationStyles isOpen={menuOpen}>
+          <div className="logo-container">
+            <LogoColor />
+          </div>
+          <ul>
+            {MENU_ITEMS.map((menuItem) => (
+              <Link href={menuItem.path} key={menuItem.text}>
+                <li data-active={router.asPath === menuItem.path}>
+                  <>
+                    <a>
+                      {menuItem.text}
+                      <div className="menu-cta">
+                        <ArrowRight />
+                      </div>
+                    </a>
+                  </>
+                </li>
+              </Link>
+            ))}
+          </ul>
+          <div className="tooltip">
+            <TooltipIcon />
+          </div>
+        </NavigationStyles>
+        <MenuIconStyles
+          isOpen={menuOpen}
+          role="button"
+          onClick={toggleMenu}
+          tabIndex={0}
+        >
+          <MenuIcon isOpen={menuOpen} />
+        </MenuIconStyles>
+      </HeaderStyles>
       <ActionBarStyles className="container-full-width">
         <LogoColor />
-        <div className="cta" role="button" onClick={toggleMenu} tabIndex={0}>
-          <MenuIcon isOpen={menuOpen} />
-        </div>
+        <ButtonPrimaryRounded>
+          <PlaneIcon />
+        </ButtonPrimaryRounded>
       </ActionBarStyles>
-    </HeaderStyles>
+    </>
   )
 }
 
