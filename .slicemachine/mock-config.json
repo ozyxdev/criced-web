@@ -1,6 +1,11 @@
 {
   "slices": {
-    "BannerSlice": {},
+    "BannerSlice": {
+      "bannerImageSlice": {
+        "primary": {},
+        "items": {}
+      }
+    },
     "FullWidthImage": {},
     "ImageGallery": {},
     "FeaturedImage": {},
@@ -62,6 +67,7 @@
           "blocks": 1
         }
       }
-    }
+    },
+    "about-page": {}
   }
 }

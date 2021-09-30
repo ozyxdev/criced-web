@@ -15,23 +15,16 @@ const BannerContainerStyles = styled.section`
     align-items: flex-start;
   }
 
+  .banner-description {
+    margin-bottom: 2rem;
+  }
+
   a {
     display: flex;
-    flex-basis: 0;
     padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    color: var(--white);
-    background: var(--primary);
-    align-items: center;
-    margin-top: auto;
-    justify-items: space-between;
 
     span {
       margin-right: 1rem;
-    }
-
-    svg {
-      fill: var(--white);
     }
   }
 
@@ -51,6 +44,24 @@ const BannerContainerStyles = styled.section`
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: 1fr;
       grid-gap: 20px;
+    }
+  }
+
+  // Banner with image
+  &&.bannerImageSlice {
+    .container {
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 480px) {
+      .container {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .image-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+      }
     }
   }
 `
@@ -132,4 +143,50 @@ const BannerImageStyles = styled.div`
   }
 `
 
-export { BannerContainerStyles, BannerImageStyles }
+const PrimaryImageStyles = styled.div`
+  display: none;
+  @media (min-width: 480px) {
+    display: block;
+    background: red;
+    grid-column: 2/4;
+    grid-row: 1/4;
+    background-image: ${(props) => `url(${props.background})`};
+    background-size: cover;
+    background-position: center center;
+    height: 353px;
+    width: 270px;
+    border-radius: 1rem;
+    justify-self: end;
+
+    box-shadow: 0px 0px 3.6px rgba(0, 0, 0, 0.024),
+      0px 0px 10px rgba(0, 0, 0, 0.035), 0px 0px 24.1px rgba(0, 0, 0, 0.046),
+      0px 0px 80px rgba(0, 0, 0, 0.07);
+  }
+`
+const SecondaryImageStyles = styled.div`
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    border-radius: 1rem;
+    width: 256px;
+    height: 151px;
+    background: blue;
+    grid-column: 1/3;
+    grid-row: 2/4;
+    background-image: ${(props) => `url(${props.background})`};
+    background-size: cover;
+    align-self: center;
+    justify-self: end;
+
+    box-shadow: 0px 0px 3.6px rgba(0, 0, 0, 0.024),
+      0px 0px 10px rgba(0, 0, 0, 0.035), 0px 0px 24.1px rgba(0, 0, 0, 0.046),
+      0px 0px 80px rgba(0, 0, 0, 0.07);
+  }
+`
+
+export {
+  BannerContainerStyles,
+  BannerImageStyles,
+  PrimaryImageStyles,
+  SecondaryImageStyles,
+}

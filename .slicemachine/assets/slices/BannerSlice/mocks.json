@@ -12,7 +12,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=115&h=405&fit=crop",
+          "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=115&h=405&fit=crop",
           "mobile": {
             "dimensions": {
               "width": 115,
@@ -20,13 +20,13 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=115&h=70&fit=crop"
+            "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=115&h=70&fit=crop"
           }
         },
         "description": [
           {
             "type": "heading2",
-            "text": "Transform proactive e-business",
+            "text": "Maximize visionary methodologies",
             "spans": []
           }
         ]
@@ -39,7 +39,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=115&h=405&fit=crop",
+          "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=115&h=405&fit=crop",
           "mobile": {
             "dimensions": {
               "width": 115,
@@ -47,40 +47,13 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=115&h=70&fit=crop"
+            "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=115&h=70&fit=crop"
           }
         },
         "description": [
           {
             "type": "heading2",
-            "text": "Maximize one-to-one bandwidth",
-            "spans": []
-          }
-        ]
-      },
-      {
-        "image": {
-          "dimensions": {
-            "width": 115,
-            "height": 405
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=115&h=405&fit=crop",
-          "mobile": {
-            "dimensions": {
-              "width": 115,
-              "height": 70
-            },
-            "alt": "Placeholder image",
-            "copyright": null,
-            "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=115&h=70&fit=crop"
-          }
-        },
-        "description": [
-          {
-            "type": "heading2",
-            "text": "Mesh extensible web-readiness",
+            "text": "Exploit strategic markets",
             "spans": []
           }
         ]
@@ -90,21 +63,66 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Aggregate web-enabled e-tailers",
+          "text": "Visualize visionary eyeballs",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Lorem cupidatat excepteur cupidatat culpa culpa minim eu eiusmod ex commodo labore pariatur nostrud. Tempor eiusmod exercitation proident dolor tempor adipisicing officia. Dolor id sunt in pariatur eu voluptate id incididunt culpa tempor.",
+          "text": "Anim eiusmod adipisicing quis. Excepteur sint occaecat magna irure incididunt. Laboris ipsum laborum aliquip incididunt excepteur anim.",
           "spans": []
         }
       ],
-      "ctaLabel": "transition proactive web services",
+      "ctaLabel": "monetize rich mindshare",
       "cta": {
         "link_type": "Web",
-        "url": "http://twitter.com"
+        "url": "http://google.com"
+      }
+    }
+  },
+  {
+    "variation": "bannerImageSlice",
+    "name": "Banner Image Slice",
+    "slice_type": "banner_slice",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Architect sexy supply-chains",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Enim qui ullamco aliqua deserunt. Aliqua nulla exercitation anim elit et deserunt do minim aliquip magna officia culpa. Amet cillum velit labore eu elit id occaecat veniam esse eu nostrud anim.",
+          "spans": []
+        }
+      ],
+      "ctaLabel": "brand cross-media interfaces",
+      "cta": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      },
+      "primaryImage": {
+        "dimensions": {
+          "width": 442,
+          "height": 337
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=442&h=337&fit=crop"
+      },
+      "secondaryImage": {
+        "dimensions": {
+          "width": 320,
+          "height": 189
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=320&h=189&fit=crop"
       }
     }
   }
