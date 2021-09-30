@@ -74,6 +74,72 @@
           "type": "StructuredText"
         }
       }
+    },
+    {
+      "id": "bannerImageSlice",
+      "name": "Banner Image Slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "BannerSlice",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Título",
+            "placeholder": "Titulo de Banner",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Texto secundario",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "ctaLabel": {
+          "config": {
+            "label": "Texto de botón",
+            "placeholder": "ej. Contáctanos"
+          },
+          "type": "Text"
+        },
+        "cta": {
+          "config": {
+            "label": "Link de botón",
+            "placeholder": "",
+            "select": "web",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        },
+        "primaryImage": {
+          "config": {
+            "label": "Imagen Principal",
+            "constraint": {
+              "width": 442,
+              "height": 337
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "secondaryImage": {
+          "config": {
+            "label": "Imagen Secundaria",
+            "constraint": {
+              "width": 320,
+              "height": 189
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      },
+      "items": {}
     }
   ]
 }

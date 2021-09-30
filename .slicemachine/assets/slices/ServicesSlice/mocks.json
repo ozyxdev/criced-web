@@ -8,14 +8,78 @@
         "title": [
           {
             "type": "heading3",
-            "text": "Maximize customized communities",
+            "text": "Enable enterprise technologies",
             "spans": []
           }
         ],
         "subtitle": [
           {
             "type": "heading4",
-            "text": "Disintermediate sexy paradigms",
+            "text": "Disintermediate next-generation deliverables",
+            "spans": []
+          }
+        ],
+        "icon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&h=500&fit=crop"
+        },
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Elit veniam veniam ullamco laborum incididunt mollit dolor deserunt officia pariatur velit officia sit ea.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "title": [
+          {
+            "type": "heading3",
+            "text": "Mesh B2B deliverables",
+            "spans": []
+          }
+        ],
+        "subtitle": [
+          {
+            "type": "heading4",
+            "text": "Whiteboard leading-edge infomediaries",
+            "spans": []
+          }
+        ],
+        "icon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&h=500&fit=crop"
+        },
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Est magna sit elit est anim irure consequat nostrud. Ea incididunt ipsum ullamco ut ea deserunt cupidatat ut aliquip mollit adipisicing. Ad ad magna nisi culpa nostrud qui laboris.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "title": [
+          {
+            "type": "heading3",
+            "text": "Evolve leading-edge architectures",
+            "spans": []
+          }
+        ],
+        "subtitle": [
+          {
+            "type": "heading4",
+            "text": "Aggregate one-to-one bandwidth",
             "spans": []
           }
         ],
@@ -31,7 +95,7 @@
         "description": [
           {
             "type": "paragraph",
-            "text": "Lorem ipsum nostrud nulla.",
+            "text": "Consequat ad pariatur adipisicing esse. Aliqua quis ea nisi voluptate excepteur nisi dolor dolore duis eu incididunt incididunt nostrud cillum.",
             "spans": []
           }
         ]
@@ -40,78 +104,14 @@
         "title": [
           {
             "type": "heading3",
-            "text": "Leverage one-to-one users",
+            "text": "Syndicate collaborative e-tailers",
             "spans": []
           }
         ],
         "subtitle": [
           {
             "type": "heading4",
-            "text": "Brand front-end platforms",
-            "spans": []
-          }
-        ],
-        "icon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&h=500&fit=crop"
-        },
-        "description": [
-          {
-            "type": "paragraph",
-            "text": "Magna commodo commodo aliqua nostrud. Ex ut enim est do.",
-            "spans": []
-          }
-        ]
-      },
-      {
-        "title": [
-          {
-            "type": "heading3",
-            "text": "Unleash efficient methodologies",
-            "spans": []
-          }
-        ],
-        "subtitle": [
-          {
-            "type": "heading4",
-            "text": "Implement distributed interfaces",
-            "spans": []
-          }
-        ],
-        "icon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=900&h=500&fit=crop"
-        },
-        "description": [
-          {
-            "type": "paragraph",
-            "text": "Amet consectetur magna officia consequat occaecat occaecat tempor ipsum nostrud pariatur deserunt anim dolore. Proident irure dolore ipsum irure magna velit. Pariatur officia exercitation cupidatat.",
-            "spans": []
-          }
-        ]
-      },
-      {
-        "title": [
-          {
-            "type": "heading3",
-            "text": "Empower B2C communities",
-            "spans": []
-          }
-        ],
-        "subtitle": [
-          {
-            "type": "heading4",
-            "text": "Deliver cross-platform niches",
+            "text": "Synergize enterprise vortals",
             "spans": []
           }
         ],
@@ -127,7 +127,7 @@
         "description": [
           {
             "type": "paragraph",
-            "text": "Qui amet deserunt ex amet amet.",
+            "text": "Fugiat Lorem dolor eu ullamco Lorem voluptate ex ea cillum exercitation. Aute ea minim proident mollit dolor esse deserunt et fugiat dolor qui.",
             "spans": []
           }
         ]
@@ -137,14 +137,14 @@
       "title": [
         {
           "type": "heading2",
-          "text": "Enhance frictionless mindshare",
+          "text": "Synthesize back-end web-readiness",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Voluptate nisi consequat dolor voluptate duis culpa excepteur sunt occaecat nulla fugiat sint et nulla ex.",
+          "text": "Aliqua sit commodo fugiat. Labore ad cillum ipsum officia dolore non.",
           "spans": []
         }
       ]
