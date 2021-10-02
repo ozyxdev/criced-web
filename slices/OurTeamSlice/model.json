@@ -1,0 +1,43 @@
+{
+  "id": "our_team_slice",
+  "type": "SharedSlice",
+  "name": "OurTeamSlice",
+  "description": "OurTeamSlice",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "OurTeamSlice",
+      "primary": {},
+      "items": {
+        "name": {
+          "config": {
+            "label": "Nombre",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "title": {
+          "config": {
+            "label": "Título",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "photo": {
+          "config": {
+            "label": "Foto",
+            "constraint": {
+              "width": 175,
+              "height": 175
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      }
+    }
+  ]
+}

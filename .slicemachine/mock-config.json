@@ -1,11 +1,6 @@
 {
   "slices": {
-    "BannerSlice": {
-      "bannerImageSlice": {
-        "primary": {},
-        "items": {}
-      }
-    },
+    "BannerSlice": {},
     "FullWidthImage": {},
     "ImageGallery": {},
     "FeaturedImage": {},
@@ -27,6 +22,33 @@
             }
           },
           "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "OurTeamSlice": {},
+    "DirectorTeamSlice": {
+      "default-slice": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {
+          "resume": {
             "config": {
               "patternType": "PARAGRAPH",
               "blocks": 1

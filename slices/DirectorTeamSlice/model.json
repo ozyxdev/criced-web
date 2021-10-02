@@ -1,0 +1,71 @@
+{
+  "id": "director_team_slice",
+  "type": "SharedSlice",
+  "name": "DirectorTeamSlice",
+  "description": "DirectorTeamSlice",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "DirectorTeamSlice",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Titulo",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Descripción",
+            "placeholder": "A nice description of your feature",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        }
+      },
+      "items": {
+        "name": {
+          "config": {
+            "label": "Nombre",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "title": {
+          "config": {
+            "label": "Título",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "image": {
+          "config": {
+            "label": "Foto",
+            "constraint": {
+              "width": 200,
+              "height": 256
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "resume": {
+          "config": {
+            "label": "Resumé",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink"
+          },
+          "type": "StructuredText"
+        }
+      }
+    }
+  ]
+}

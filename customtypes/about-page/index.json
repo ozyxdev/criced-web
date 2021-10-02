@@ -22,6 +22,12 @@
             },
             "services_slice": {
               "type": "SharedSlice"
+            },
+            "our_team_slice": {
+              "type": "SharedSlice"
+            },
+            "director_team_slice": {
+              "type": "SharedSlice"
             }
           }
         }
