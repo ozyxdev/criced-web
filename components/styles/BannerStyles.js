@@ -29,9 +29,7 @@ const BannerContainerStyles = styled.section`
   }
 
   .image-container {
-    display: grid;
-    grid-template-rows: repeat(5, 70px);
-    grid-gap: 20px;
+    display: none;
   }
 
   @media (min-width: 480px) {

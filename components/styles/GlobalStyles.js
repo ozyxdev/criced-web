@@ -3,7 +3,6 @@ import { normalize } from 'styled-normalize'
 
 const GlobalStyles = createGlobalStyle`
   /* debug */
-  /* * { border: 1px solid black;}  */
 
 
   ${normalize}

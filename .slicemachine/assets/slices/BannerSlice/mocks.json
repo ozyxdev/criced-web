@@ -12,7 +12,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=115&h=405&fit=crop",
+          "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=115&h=405&fit=crop",
           "mobile": {
             "dimensions": {
               "width": 115,
@@ -20,13 +20,13 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=115&h=70&fit=crop"
+            "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=115&h=70&fit=crop"
           }
         },
         "description": [
           {
             "type": "heading2",
-            "text": "Maximize visionary methodologies",
+            "text": "Empower web-enabled ROI",
             "spans": []
           }
         ]
@@ -39,7 +39,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=115&h=405&fit=crop",
+          "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=115&h=405&fit=crop",
           "mobile": {
             "dimensions": {
               "width": 115,
@@ -47,13 +47,40 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=115&h=70&fit=crop"
+            "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=115&h=70&fit=crop"
           }
         },
         "description": [
           {
             "type": "heading2",
-            "text": "Exploit strategic markets",
+            "text": "Redefine interactive mindshare",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 115,
+            "height": 405
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=115&h=405&fit=crop",
+          "mobile": {
+            "dimensions": {
+              "width": 115,
+              "height": 70
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=115&h=70&fit=crop"
+          }
+        },
+        "description": [
+          {
+            "type": "heading2",
+            "text": "Whiteboard revolutionary relationships",
             "spans": []
           }
         ]
@@ -63,21 +90,21 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Visualize visionary eyeballs",
+          "text": "Enhance global portals",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Anim eiusmod adipisicing quis. Excepteur sint occaecat magna irure incididunt. Laboris ipsum laborum aliquip incididunt excepteur anim.",
+          "text": "Exercitation commodo laboris dolor commodo et eu in. Elit ipsum voluptate ex eiusmod qui aute consectetur irure nulla officia.",
           "spans": []
         }
       ],
-      "ctaLabel": "monetize rich mindshare",
+      "ctaLabel": "engineer frictionless mindshare",
       "cta": {
         "link_type": "Web",
-        "url": "http://google.com"
+        "url": "https://slicemachine.dev"
       }
     }
   },
@@ -90,21 +117,21 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Architect sexy supply-chains",
+          "text": "Engage clicks-and-mortar synergies",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Enim qui ullamco aliqua deserunt. Aliqua nulla exercitation anim elit et deserunt do minim aliquip magna officia culpa. Amet cillum velit labore eu elit id occaecat veniam esse eu nostrud anim.",
+          "text": "Aliqua eu est do ea deserunt ex tempor est id ipsum mollit aute incididunt culpa eiusmod. Aute duis adipisicing magna ea duis.",
           "spans": []
         }
       ],
-      "ctaLabel": "brand cross-media interfaces",
+      "ctaLabel": "syndicate synergistic experiences",
       "cta": {
         "link_type": "Web",
-        "url": "https://slicemachine.dev"
+        "url": "http://twitter.com"
       },
       "primaryImage": {
         "dimensions": {
@@ -113,7 +140,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=442&h=337&fit=crop"
+        "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=442&h=337&fit=crop"
       },
       "secondaryImage": {
         "dimensions": {
@@ -122,7 +149,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=320&h=189&fit=crop"
+        "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=320&h=189&fit=crop"
       }
     }
   }
