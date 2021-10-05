@@ -1,0 +1,71 @@
+{
+  "id": "course_header_slice",
+  "type": "SharedSlice",
+  "name": "CourseHeaderSlice",
+  "description": "CourseHeaderSlice",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CourseHeaderSlice",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "Título",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "description": {
+          "config": {
+            "label": "Descripción",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "modality": {
+          "config": {
+            "label": "Modalidad",
+            "placeholder": "En Línea"
+          },
+          "type": "Text"
+        },
+        "duration": {
+          "config": {
+            "label": "Duracion",
+            "placeholder": "6 meses"
+          },
+          "type": "Text"
+        },
+        "time": {
+          "config": {
+            "label": "Horario",
+            "placeholder": "18:00 - 19:00"
+          },
+          "type": "Text"
+        },
+        "frequency": {
+          "config": {
+            "label": "Frecuencia",
+            "placeholder": "Lunes, Miercoles y Viernes"
+          },
+          "type": "Text"
+        },
+        "image": {
+          "config": {
+            "label": "Imagen",
+            "constraint": {
+              "width": 330,
+              "height": 330
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

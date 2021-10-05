@@ -34,6 +34,7 @@ const GlobalStyles = createGlobalStyle`
     --primary-light: hsla(242, 76%, 92%, 0.7);
     --secondary: #F9B8C3;
     --secondary-light: rgba(252, 217, 223, 1);
+    --secondary-dark: #F58EA0;
     --tertiary: #FFDD60;
     --tertiary-light: #FFF2C2;
     --tertiary-light: #FFF6D6;

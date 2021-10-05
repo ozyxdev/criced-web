@@ -1,70 +1,85 @@
-import SliceZone from 'next-slicezone'
-import { useGetStaticProps, useGetStaticPaths } from 'next-slicezone/hooks'
-import Prismic from '@prismicio/client'
-
 import { RichText } from 'prismic-reactjs'
 import { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { Client } from '../../prismic-configuration'
+import Link from 'next/link'
 
-import resolver from '../../sm-resolver'
 import LongArrowIcon from './icons/long-arrow'
-import { getAllCourses } from '../../utils/api'
+import { gradesEnum, levels, levelsEnum } from '../../utils/constants'
+import { useMediaQuery } from '../../utils/useMediaQuery'
 
 const LevelsStylesContainer = styled.div`
-  display: flex;
-  justify-content: center;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 6rem auto 6rem;
+  }
 
-  li {
-    color: var(--dark);
-    line-height: 1.2;
-    cursor: pointer;
-    display: inline;
-    padding: 0.5rem 1rem;
-    margin: 0 2.1rem;
-    position: relative;
+  ul {
+    grid-column-start: 2;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
-    ::after {
-      position: absolute;
-      background: var(--primary);
-      content: '';
-      bottom: -0.5rem;
-      left: 0;
-      height: 2px;
-      width: 0;
-      transition: width 200ms ease-in;
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-start: 2;
     }
   }
-  [data-selected='true'] {
+
+  li {
+    display: flex;
+    justify-content: center;
+    color: var(--dark);
+    line-height: 1;
+    cursor: pointer;
+    margin: 1rem;
+    padding: 1rem 0.5rem;
+    position: relative;
+    border: 1px solid var(--primary);
+    border-radius: 0.5rem;
     color: var(--primary);
-    ::after {
-      position: absolute;
-      background: var(--primary);
-      content: '';
-      bottom: -0.5rem;
-      left: 0;
-      height: 2px;
-      width: 100%;
-    }
+  }
+  [data-selected='true'] {
+    background: var(--primary);
+    color: var(--white);
   }
 `
 
 const GradesStylesContainer = styled.div`
-  display: flex;
-  justify-content: center;
+  margin-top: 2rem;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 16rem auto 16rem;
+  }
+
+  ul {
+    grid-column-start: 2;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
   li {
+    display: flex;
+    justify-content: center;
     font-size: 12px;
-    color: var(--primary);
+    color: var(--success);
     line-height: 1.2;
     cursor: pointer;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--success);
     border-radius: 0.5rem;
-    display: inline;
     padding: 0.5rem 1rem;
     margin: 0 1.2rem;
   }
   [data-selected='true'] {
-    background-color: var(--primary);
+    background-color: var(--success);
     color: var(--white);
   }
 `
@@ -73,7 +88,13 @@ const CardContainerStyles = styled.div`
   margin-top: 7rem;
   display: grid;
   grid-gap: 3rem;
-  grid-template-columns: repeat(3, 1fr);
+  @media (min-width: 480px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `
 
 const CourseCardStyles = styled.article`
@@ -105,7 +126,7 @@ const CourseCardStyles = styled.article`
     overflow: hidden;
   }
 
-  .cta {
+  a {
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
@@ -130,36 +151,31 @@ const CourseCardStyles = styled.article`
 `
 
 function CourseSelect({ courses }) {
-  const [selectedLevel, setSelectedLevel] = useState('primaria')
-  const [selectedGrade, setSelectedGrade] = useState('primero')
+  const [selectedLevel, setSelectedLevel] = useState(levelsEnum.PRIMARIA)
+  const [selectedGrade, setSelectedGrade] = useState(gradesEnum.PRIMERO)
   const [availableCourses, setAvailableCourses] = useState([])
-  const [grades, setGrades] = useState([])
-  const niveles = {
-    primaria: {
-      grados: ['primero', 'segundo', 'tercero', 'cuarto', 'quinto', 'sexto'],
-    },
-    secundaria: { grados: ['primero', 'segundo', 'tercero'] },
-    preparatoria: {
-      grados: ['primero', 'segundo', 'tercero', 'cuarto', 'quinto', 'sexto'],
-    },
-    universidad: { grados: ['No Aplica'] },
-    otro: { grados: ['No Aplica'] },
-  }
+  const [gradesOptions, setGradesOptions] = useState([])
+  const [gradesOrdinalsOptions, setGradesOrdinalsOptions] = useState([])
+  const isOverMobile = useMediaQuery('(min-width: 480px)')
 
   useEffect(() => {
-    const { grados } = niveles[selectedLevel]
-    setGrades(grados)
-    setSelectedGrade(grados[0] || '')
+    const { grades, gradesOrdinals } = levels[selectedLevel]
+    setGradesOptions(grades)
+    setGradesOrdinalsOptions(gradesOrdinals)
+    setSelectedGrade(grades[0] || '')
   }, [selectedLevel])
 
   useEffect(() => {
     if (!courses) return
-    const filteredCourses = courses.filter(
-      (course) =>
-        // return course.data.nivel.toLowerCase === selectedLevel.toLowerCase
-        course.data.grade.toLowerCase() === selectedGrade.toLowerCase() &&
-        course.data.level.toLowerCase() === selectedLevel.toLowerCase()
-    )
+    const filteredCourses = courses.filter((course) => {
+      if (selectedGrade.toLowerCase() === gradesEnum.NA) {
+        return course.node.level.toLowerCase() === selectedLevel.toLowerCase()
+      }
+      return (
+        course.node.grade.toLowerCase() === selectedGrade.toLowerCase() &&
+        course.node.level.toLowerCase() === selectedLevel.toLowerCase()
+      )
+    })
     setAvailableCourses(filteredCourses)
   }, [selectedGrade, selectedLevel, courses])
 
@@ -168,30 +184,31 @@ function CourseSelect({ courses }) {
       <h1>Courses</h1>
       <LevelsStylesContainer>
         <ul>
-          {Object.keys(niveles).map((nivel) => (
+          {Object.keys(levels).map((level) => (
             <li
-              id={nivel}
-              key={nivel}
-              data-selected={selectedLevel === nivel}
-              onClick={() => setSelectedLevel(nivel)}
+              id={level}
+              key={level}
+              data-selected={selectedLevel === level}
+              onClick={() => setSelectedLevel(level)}
             >
-              {nivel}
+              {level}
             </li>
           ))}
         </ul>
       </LevelsStylesContainer>
       <GradesStylesContainer>
         <ul>
-          {grades &&
-            grades.map(
-              (grado) =>
-                grado !== 'No Aplica' && (
+          {gradesOptions &&
+            gradesOptions.map(
+              (grade, i) =>
+                grade !== gradesEnum.NA && (
                   <li
-                    key={grado}
-                    data-selected={selectedGrade === grado}
-                    onClick={() => setSelectedGrade(grado)}
+                    key={grade}
+                    data-selected={selectedGrade === grade}
+                    onClick={() => setSelectedGrade(grade)}
                   >
-                    {grado}
+                    {isOverMobile ? grade : gradesOrdinalsOptions[i]}
+                    {!isOverMobile && <>&ordm;</>}
                   </li>
                 )
             )}
@@ -199,15 +216,20 @@ function CourseSelect({ courses }) {
       </GradesStylesContainer>
 
       <CardContainerStyles>
-        {availableCourses.map((course) => (
-          <CourseCardStyles key={course.id}>
-            <RichText render={course.data.shortTitle} />
-            <RichText render={course.data.description} />
-            <span className="cta">
-              Conocer mas <LongArrowIcon />
-            </span>
-          </CourseCardStyles>
-        ))}
+        {availableCourses.map((course) => {
+          const { _meta, title, description } = course.node
+          return (
+            <CourseCardStyles key={_meta.uid}>
+              <RichText render={title} />
+              <RichText render={description} />
+              <Link href={`/cursos/${_meta.uid}`}>
+                <a href="">
+                  Conocer mas <LongArrowIcon />
+                </a>
+              </Link>
+            </CourseCardStyles>
+          )
+        })}
       </CardContainerStyles>
     </>
   )

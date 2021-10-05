@@ -1,31 +1,23 @@
 {
-  "id": "0f85ea89-b75c-493d-ada5-a344b4d02014",
-  "uid": "explicabo-blanditiis-et",
+  "id": "10dc8411-c665-4134-b969-67c98fe5025e",
+  "uid": "quia-vel-maiores",
   "type": "curso",
   "data": {
     "title": [
       {
         "type": "heading3",
-        "text": "Syndicate robust blockchains",
-        "spans": []
-      }
-    ],
-    "shortTitle": [
-      {
-        "type": "heading3",
-        "text": "Monetize customized supply-chains",
+        "text": "Reintermediate distributed interfaces",
         "spans": []
       }
     ],
     "description": [
       {
         "type": "paragraph",
-        "text": "Duis in fugiat sit irure minim veniam ad non.",
+        "text": "Non esse est enim do occaecat commodo ullamco anim. Exercitation commodo esse eiusmod incididunt voluptate occaecat consequat cillum reprehenderit fugiat.",
         "spans": []
       }
     ],
-    "level": "Otro",
-    "grade": "primero",
-    "price": 5458
+    "level": "Primaria",
+    "grade": "Primero"
   }
 }

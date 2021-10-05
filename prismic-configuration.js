@@ -18,25 +18,21 @@ export const accessToken = ''
 // -- Link resolution rules
 // Manages the url links to internal Prismic documents
 export const linkResolver = (doc) => {
-  if (doc.type === 'page') {
-    return `/${doc.uid}`
+  if (doc) {
+    if (doc.type === 'page') {
+      return `/${doc.uid}`
+    }
+    if (doc.type === 'curso') {
+      return `cursos/${doc.uid}`
+    }
   }
   return '/'
 }
 
-export const customLink = (type, element, content, children, index) => (
-  <Link
-    key={index}
-    href={linkResolver(element.data)}
-    as={linkResolver(element.data)}
-  >
-    <a>{content}</a>
-  </Link>
-)
-
 export const Router = {
   routes: [
     { type: 'page', path: '/:uid' },
+    { type: 'curso', path: '/cursos/:uid' },
     {
       type: 'home-page',
       path: '/',
@@ -52,5 +48,14 @@ export const Router = {
   },
 }
 
+export const customLink = (type, element, content, children, index) => (
+  <Link
+    key={index}
+    href={linkResolver(element.data)}
+    as={linkResolver(element.data)}
+  >
+    <a>{content}</a>
+  </Link>
+)
 export const Client = (req = null, options = {}) =>
   Prismic.client(apiEndpoint, { routes: Router.routes, ...options })

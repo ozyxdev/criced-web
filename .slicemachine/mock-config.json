@@ -56,6 +56,11 @@
           }
         }
       }
+    },
+    "CourseHeaderSlice": {
+      "default-slice": {
+        "primary": {}
+      }
     }
   },
   "_cts": {
@@ -70,12 +75,6 @@
         }
       },
       "title": {
-        "config": {
-          "patternType": "HEADING",
-          "blocks": 1
-        }
-      },
-      "shortTitle": {
         "config": {
           "patternType": "HEADING",
           "blocks": 1

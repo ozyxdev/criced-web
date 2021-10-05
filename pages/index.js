@@ -6,8 +6,16 @@ import { Client } from '../prismic-configuration'
 import resolver from '../sm-resolver'
 import { getAllCourses } from '../utils/api'
 
-export default function Home({ homepage }) {
-  return <SliceZone {...homepage} resolver={resolver} />
+export default function Home({ homepage, courses }) {
+  return (
+    <SliceZone
+      resolver={resolver}
+      sliceProps={({ sliceName }) => ({
+        courses: sliceName === 'CourseMenu' ? courses : null,
+      })}
+      slices={homepage.data.slices}
+    />
+  )
 }
 
 export const getStaticProps = async (...args) => {

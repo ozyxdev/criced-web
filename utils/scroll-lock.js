@@ -7,7 +7,7 @@ export default {
     $body.style.overflow = 'hidden'
     $body.style.position = 'fixed'
     $body.style.top = `-${scrollPosition}px`
-    $body.style.width = 'auto'
+    $body.style.width = 'calc(100vw -  4rem)'
   },
   disable() {
     $body.style.removeProperty('overflow')
