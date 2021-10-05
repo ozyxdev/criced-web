@@ -2,6 +2,7 @@
 
 export { default as BannerSlice } from './BannerSlice'
 export { default as ContactSlice } from './ContactSlice'
+export { default as CourseCurriculumSlice } from './CourseCurriculumSlice'
 export { default as CourseHeaderSlice } from './CourseHeaderSlice'
 export { default as CourseMenu } from './CourseMenu'
 export { default as DirectorTeamSlice } from './DirectorTeamSlice'

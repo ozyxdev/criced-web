@@ -1,0 +1,42 @@
+{
+  "id": "course_curriculum_slice",
+  "type": "SharedSlice",
+  "name": "CourseCurriculumSlice",
+  "description": "CourseCurriculumSlice",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CourseCurriculumSlice",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "Título",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      },
+      "items": {
+        "topic": {
+          "config": {
+            "label": "Titulo de Seccion",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "subjects": {
+          "config": {
+            "label": "Temas",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "list-item"
+          },
+          "type": "StructuredText"
+        }
+      }
+    }
+  ]
+}

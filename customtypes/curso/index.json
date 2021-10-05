@@ -72,6 +72,9 @@
           "choices": {
             "course_header_slice": {
               "type": "SharedSlice"
+            },
+            "course_curriculum_slice": {
+              "type": "SharedSlice"
             }
           }
         }
