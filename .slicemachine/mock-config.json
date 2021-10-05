@@ -57,9 +57,17 @@
         }
       }
     },
-    "CourseHeaderSlice": {
+    "CourseHeaderSlice": {},
+    "CourseCurriculumSlice": {
       "default-slice": {
-        "primary": {}
+        "items": {
+          "subjects": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
       }
     }
   },

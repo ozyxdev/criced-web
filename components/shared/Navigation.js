@@ -20,7 +20,6 @@ import TooltipIcon from './icons/TooltipIcon'
 
 function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false)
-  console.log('menuOpen', menuOpen)
   const isOverMobile = useMediaQuery('(min-width: 480px)')
   const router = useRouter()
 

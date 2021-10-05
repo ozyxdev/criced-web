@@ -1,23 +1,23 @@
 {
-  "id": "10dc8411-c665-4134-b969-67c98fe5025e",
-  "uid": "quia-vel-maiores",
+  "id": "0ff3daa7-ae19-4d72-9f25-98c1e7884763",
+  "uid": "nihil-possimus-eos",
   "type": "curso",
   "data": {
     "title": [
       {
         "type": "heading3",
-        "text": "Reintermediate distributed interfaces",
+        "text": "Unleash killer communities",
         "spans": []
       }
     ],
     "description": [
       {
         "type": "paragraph",
-        "text": "Non esse est enim do occaecat commodo ullamco anim. Exercitation commodo esse eiusmod incididunt voluptate occaecat consequat cillum reprehenderit fugiat.",
+        "text": "Pariatur fugiat magna do est veniam minim aliqua magna irure dolor cillum commodo.",
         "spans": []
       }
     ],
-    "level": "Primaria",
-    "grade": "Primero"
+    "level": "Otro",
+    "grade": "Sexto"
   }
 }
