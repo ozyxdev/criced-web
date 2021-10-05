@@ -5,19 +5,17 @@
   "status": true,
   "json": {
     "Main": {
+      "uid": {
+        "config": {
+          "label": "",
+          "placeholder": ""
+        },
+        "type": "UID"
+      },
       "title": {
         "config": {
           "label": "Titulo",
           "placeholder": "Titulo Completo del Curso",
-          "allowTargetBlank": true,
-          "single": "heading3"
-        },
-        "type": "StructuredText"
-      },
-      "shortTitle": {
-        "config": {
-          "label": "Titulo Corto",
-          "placeholder": "Titulo corto del curso",
           "allowTargetBlank": true,
           "single": "heading3"
         },
@@ -41,8 +39,10 @@
             "Secundaria",
             "Preparatoria",
             "Universidad",
+            "Inglés",
             "Otro"
-          ]
+          ],
+          "default_value": "Primaria"
         },
         "type": "Select"
       },
@@ -51,26 +51,30 @@
           "label": "Grado",
           "placeholder": "Grado de estudios",
           "options": [
-            "primero",
-            "segundo",
-            "tercero",
-            "cuarto",
-            "quinto",
-            "sexto",
-            "septimo",
-            "octavo",
+            "Primero",
+            "Segundo",
+            "Tercero",
+            "Cuarto",
+            "Quinto",
+            "Sexto",
+            "Septimo",
+            "Octavo",
             "No Aplica"
           ],
-          "default_value": "primero"
+          "default_value": "Primero"
         },
         "type": "Select"
       },
-      "price": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
         "config": {
-          "label": "Costo",
-          "placeholder": "Costo del Curso"
-        },
-        "type": "Number"
+          "choices": {
+            "course_header_slice": {
+              "type": "SharedSlice"
+            }
+          }
+        }
       }
     }
   }

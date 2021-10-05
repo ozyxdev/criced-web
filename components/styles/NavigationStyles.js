@@ -52,6 +52,10 @@ const NavigationStyles = styled.div`
     path {
       fill: var(--white);
     }
+
+    @media (min-width: 480px) {
+      display: none;
+    }
   }
 
   ul {
@@ -177,7 +181,7 @@ const NavigationStyles = styled.div`
 
 const ActionBarStyles = styled.div`
   pointer-events: all;
-  background: var(--off-white);
+  background: var(--white);
   position: relative;
   display: flex;
   justify-content: space-between;

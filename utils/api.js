@@ -44,10 +44,13 @@ export async function getAllCourses() {
       allCursos {
         edges {
           node {
+            _meta {
+              uid
+            }
             title
             description
-            level
             grade
+            level
           }
         }
       }
@@ -81,6 +84,23 @@ export async function getAllHome() {
     cursos: { ...data?.allCursos?.edges },
     home: { ...data?.homePage?.slices },
   }
+}
+
+export async function getAllCoursesWithSlug() {
+  const data = await fetchAPI(`
+    {
+      allCursos {
+        edges {
+          node {
+            _meta {
+              uid
+            }
+          }
+        }
+      }
+    }
+  `)
+  return data?.allCursos?.edges
 }
 
 // export async function getAllPostsForHome(previewData) {

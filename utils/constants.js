@@ -3,7 +3,7 @@ const levelsEnum = {
   SECUNDARIA: 'secundaria',
   PREPARATORIA: 'preparatoria',
   UNIVERSIDAD: 'universidad',
-  INGLES: 'ingles',
+  INGLES: 'inglés',
   OTRO: 'otros',
 }
 
@@ -14,6 +14,20 @@ const gradesEnum = {
   CUARTO: 'cuarto',
   QUINTO: 'quinto',
   SEXTO: 'sexto',
+  SEPTIMO: 'septimo',
+  OCTAVO: 'octavo',
+  NA: 'na',
+}
+
+const ordinalsEnum = {
+  PRIMERO: '1',
+  SEGUNDO: '2',
+  TERCERO: '3',
+  CUARTO: '4',
+  QUINTO: '5',
+  SEXTO: '6',
+  SEPTIMO: '7',
+  OCTAVO: '8',
   NA: 'na',
 }
 
@@ -27,9 +41,22 @@ const levels = {
       gradesEnum.QUINTO,
       gradesEnum.SEXTO,
     ],
+    gradesOrdinals: [
+      ordinalsEnum.PRIMERO,
+      ordinalsEnum.SEGUNDO,
+      ordinalsEnum.TERCERO,
+      ordinalsEnum.CUARTO,
+      ordinalsEnum.QUINTO,
+      ordinalsEnum.SEXTO,
+    ],
   },
   [levelsEnum.SECUNDARIA]: {
     grades: [gradesEnum.PRIMERO, gradesEnum.SEGUNDO, gradesEnum.TERCERO],
+    gradesOrdinals: [
+      ordinalsEnum.PRIMERO,
+      ordinalsEnum.SEGUNDO,
+      ordinalsEnum.TERCERO,
+    ],
   },
   [levelsEnum.PREPARATORIA]: {
     grades: [
@@ -40,15 +67,26 @@ const levels = {
       gradesEnum.QUINTO,
       gradesEnum.SEXTO,
     ],
+    gradesOrdinals: [
+      ordinalsEnum.PRIMERO,
+      ordinalsEnum.SEGUNDO,
+      ordinalsEnum.TERCERO,
+      ordinalsEnum.CUARTO,
+      ordinalsEnum.QUINTO,
+      ordinalsEnum.SEXTO,
+    ],
   },
   [levelsEnum.UNIVERSIDAD]: {
     grades: [gradesEnum.NA],
+    gradesOrdinals: [ordinalsEnum.NA],
   },
   [levelsEnum.INGLES]: {
     grades: [gradesEnum.NA],
+    gradesOrdinals: [ordinalsEnum.NA],
   },
   [levelsEnum.OTRO]: {
     grades: [gradesEnum.NA],
+    gradesOrdinals: [ordinalsEnum.NA],
   },
 }
 
