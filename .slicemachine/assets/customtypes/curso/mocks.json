@@ -1,23 +1,23 @@
 {
-  "id": "0ff3daa7-ae19-4d72-9f25-98c1e7884763",
-  "uid": "nihil-possimus-eos",
+  "id": "ccc795cc-b929-496a-a122-541a6bce0d5b",
+  "uid": "rem-modi-soluta",
   "type": "curso",
   "data": {
     "title": [
       {
         "type": "heading3",
-        "text": "Unleash killer communities",
+        "text": "Reinvent web-enabled e-business",
         "spans": []
       }
     ],
     "description": [
       {
         "type": "paragraph",
-        "text": "Pariatur fugiat magna do est veniam minim aliqua magna irure dolor cillum commodo.",
+        "text": "Cillum ex dolore ut culpa in sint ea sunt esse elit nostrud in. Veniam occaecat ea adipisicing sit. Ullamco elit laborum nisi nulla elit excepteur anim Lorem ad sint.",
         "spans": []
       }
     ],
-    "level": "Otro",
-    "grade": "Sexto"
+    "level": "Inglés",
+    "grade": "Primero"
   }
 }

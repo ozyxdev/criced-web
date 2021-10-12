@@ -32,7 +32,7 @@
             "label": "Temas",
             "placeholder": "",
             "allowTargetBlank": true,
-            "single": "list-item"
+            "multi": "list-item"
           },
           "type": "StructuredText"
         }

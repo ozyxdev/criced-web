@@ -1,0 +1,92 @@
+{
+  "id": "course_pricing_slice",
+  "type": "SharedSlice",
+  "name": "CoursePricingSlice",
+  "description": "CoursePricingSlice",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CoursePricingSlice",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "Título (Sección)",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "description": {
+          "config": {
+            "label": "Descripción (Sección)",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "primaryTitle": {
+          "config": {
+            "label": "Título (Curso)",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "primaryDescription": {
+          "config": {
+            "label": "Descripción (Curso)",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "primaryPrice": {
+          "config": {
+            "label": "Precio (Curso)",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "primaryItems": {
+          "config": {
+            "label": "Beneficios (Curso)",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "list-item"
+          },
+          "type": "StructuredText"
+        },
+        "secondaryTitle": {
+          "config": {
+            "label": "Título (Asesoría)",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "secondaryDescription": {
+          "config": {
+            "label": "Descripción (Asesoría)",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "secondaryItems": {
+          "config": {
+            "label": "Beneficios (Asesoría)",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "list-item"
+          },
+          "type": "StructuredText"
+        },
+        "secondaryPrice": {
+          "config": {
+            "label": "Precio (Asesoria)",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

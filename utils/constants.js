@@ -120,4 +120,37 @@ const MENU_ITEMS = [
   },
 ]
 
-export { levels, gradesEnum, levelsEnum, CONTACT_FORM, MENU_ITEMS }
+const PRIMARY_COURSE_INFO = {
+  title: 'Curso de Regularización',
+  price: '2000',
+  description: 'Ac odio tempor orci dapibus ultrices in iaculis.',
+  items: [
+    'Aut non rerum quia eum praesentium aliquid',
+
+    'Quos numquam voluptas dolorem repellat',
+
+    'Vero autem dicta id asperiores eveniet',
+
+    'Quia sunt repellendus',
+  ],
+}
+const SECONDARY_COURSE_INFO = {
+  title: 'Asesoría Particular',
+  price: '400',
+  description: 'Ac odio tempor orci dapibus ultrices in iaculis.',
+  items: [
+    'Aut non rerum quia eum praesentium aliquid',
+    'Vero autem dicta id asperiores eveniet',
+    'Quia sunt repellendus',
+  ],
+}
+
+export {
+  levels,
+  gradesEnum,
+  levelsEnum,
+  CONTACT_FORM,
+  MENU_ITEMS,
+  PRIMARY_COURSE_INFO,
+  SECONDARY_COURSE_INFO,
+}

@@ -1,10 +1,9 @@
 import { RichText } from 'prismic-reactjs'
 import React from 'react'
-import styled from 'styled-components'
 import {
   CourseCurriculumItemStyles,
   CourseCurriculumStyles,
-} from '../../components/styles/CourseCurriculum'
+} from '../../components/styles/CourseCurriculumStyles'
 
 const CourseCurriculumSlice = ({ slice }) => (
   <CourseCurriculumStyles>

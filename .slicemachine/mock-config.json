@@ -69,6 +69,24 @@
           }
         }
       }
+    },
+    "CoursePricingSlice": {
+      "default-slice": {
+        "primary": {
+          "primaryItems": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "secondaryItems": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
     }
   },
   "_cts": {
