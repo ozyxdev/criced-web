@@ -75,6 +75,9 @@
             },
             "course_curriculum_slice": {
               "type": "SharedSlice"
+            },
+            "course_pricing_slice": {
+              "type": "SharedSlice"
             }
           }
         }

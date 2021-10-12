@@ -104,7 +104,7 @@ const GlobalStyles = createGlobalStyle`
 
   .container {
     max-width: var(--max-width);
-    margin: auto 0;
+    margin: 0 auto;
   }
 
   .section-header {
