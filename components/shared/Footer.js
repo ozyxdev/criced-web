@@ -9,6 +9,10 @@ const FooterStyles = styled.footer`
   background: var(--primary);
   margin-top: 6rem;
 
+  svg {
+    width: 180px;
+  }
+
   a {
     font-weight: 400;
   }

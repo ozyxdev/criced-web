@@ -2,8 +2,7 @@ export default function LogoSimple({ fill }) {
   return (
     <>
       <svg
-        width="212"
-        height="71"
+        preserveAspectRatio="xMidYMid meet"
         viewBox="0 0 212 71"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
