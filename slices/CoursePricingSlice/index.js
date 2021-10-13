@@ -8,6 +8,8 @@ import {
 } from '../../utils/constants'
 import { ButtonPrimary } from '../../components/styles/Button'
 import { HeaderStyles } from '../../components/shared/HeaderStyles'
+import htmlSerializer from '../../utils/html-serializer'
+import ListCheckIcon from '../../components/shared/icons/ListCheckIcon'
 
 const CoursePricingContainersStyles = styled.section`
   padding: 4rem;
@@ -107,8 +109,16 @@ const CoursePricingStyle = styled.div`
 
   ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    padding-left: 0;
+  }
+
+  li {
+    display: flex;
+  }
+
+  svg {
+    margin-top: 0.5rem;
+    margin-right: 1rem;
   }
 
   hr {
@@ -132,11 +142,14 @@ const CoursePricing = ({ courseInfo, type }) => (
     <p>{courseInfo.description}</p>
     <hr />
     {courseInfo.items.length ? (
-      <RichText render={courseInfo.items} />
+      <RichText render={courseInfo.items} htmlSerializer={htmlSerializer} />
     ) : (
       <ul>
         {courseInfo.itemsDefault.map((item) => (
-          <li key={item}>{item}</li>
+          <li key={item}>
+            <ListCheckIcon />
+            {item}
+          </li>
         ))}
       </ul>
     )}
