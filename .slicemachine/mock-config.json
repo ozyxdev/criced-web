@@ -87,6 +87,26 @@
           }
         }
       }
+    },
+    "FaqSlice": {
+      "default-slice": {
+        "items": {
+          "answer": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        },
+        "primary": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
     }
   },
   "_cts": {
@@ -118,6 +138,7 @@
     "about-page": {},
     "footer": {
       "social": {}
-    }
+    },
+    "faq": {}
   }
 }

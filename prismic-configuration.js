@@ -25,6 +25,9 @@ export const linkResolver = (doc) => {
     if (doc.type === 'curso') {
       return `cursos/${doc.uid}`
     }
+    if (doc.type === 'faq') {
+      return `/${doc.uid}`
+    }
   }
   return '/'
 }
@@ -32,6 +35,7 @@ export const linkResolver = (doc) => {
 export const Router = {
   routes: [
     { type: 'page', path: '/:uid' },
+    { type: 'faq', path: '/preguntas-frecuentes' },
     { type: 'curso', path: '/cursos/:uid' },
     {
       type: 'home-page',

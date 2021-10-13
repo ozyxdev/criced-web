@@ -145,7 +145,6 @@ const PrimaryImageStyles = styled.div`
   display: none;
   @media (min-width: 480px) {
     display: block;
-    background: red;
     grid-column: 2/4;
     grid-row: 1/4;
     background-image: ${(props) => `url(${props.background})`};
@@ -168,7 +167,6 @@ const SecondaryImageStyles = styled.div`
     border-radius: 1rem;
     width: 256px;
     height: 151px;
-    background: blue;
     grid-column: 1/3;
     grid-row: 2/4;
     background-image: ${(props) => `url(${props.background})`};

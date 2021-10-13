@@ -112,7 +112,7 @@ const MENU_ITEMS = [
   },
   {
     text: 'ayuda',
-    path: '/ayuda',
+    path: '/preguntas-frecuentes',
   },
   {
     text: 'contacto',
