@@ -1,0 +1,36 @@
+{
+  "id": "footer",
+  "label": "Footer",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "social": {
+        "config": {
+          "label": "Social Media",
+          "placeholder": "",
+          "fields": {
+            "icon": {
+              "config": {
+                "label": "",
+                "constraint": {},
+                "thumbnails": []
+              },
+              "type": "Image"
+            },
+            "link": {
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": "web",
+                "allowTargetBlank": false
+              },
+              "type": "Link"
+            }
+          }
+        },
+        "type": "Group"
+      }
+    }
+  }
+}

@@ -115,6 +115,9 @@
         }
       }
     },
-    "about-page": {}
+    "about-page": {},
+    "footer": {
+      "social": {}
+    }
   }
 }

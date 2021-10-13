@@ -15,7 +15,6 @@ const CoursePricingContainersStyles = styled.section`
   padding: 4rem;
   background: rgba(251, 252, 254, 1);
   .container {
-    padding: 4rem 2rem;
     display: grid;
     grid-gap: 4rem;
     justify-items: center;
@@ -86,9 +85,11 @@ const CoursePricingStyle = styled.div`
   background: ${({ type }) => (type === 'primary' ? '#5956E9' : '#FFFFFF')};
   border-radius: 2rem;
   padding: 3rem 4rem;
-  max-width: 400px;
   align-self: start;
 
+  @media (min-width: 480px) {
+    max-width: 400px;
+  }
   h2 {
     color: #b8b7f5;
     color: ${({ type }) => (type === 'primary' ? '#b8b7f5' : '#5956E9')};
