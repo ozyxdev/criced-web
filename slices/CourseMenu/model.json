@@ -12,22 +12,21 @@
       "description": "CourseMenu",
       "primary": {
         "title": {
-          "type": "StructuredText",
           "config": {
-            "single": "heading1",
-            "label": "Title",
-            "placeholder": "This is where it all begins..."
-          }
+            "label": "Título",
+            "placeholder": ""
+          },
+          "type": "Text"
         },
         "description": {
-          "type": "StructuredText",
           "config": {
-            "single": "paragraph",
-            "label": "Description",
-            "placeholder": "A nice description of your feature"
-          }
+            "label": "Descripción",
+            "placeholder": ""
+          },
+          "type": "Text"
         }
-      }
+      },
+      "items": {}
     }
   ]
 }

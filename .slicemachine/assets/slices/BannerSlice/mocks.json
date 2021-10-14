@@ -12,7 +12,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=115&h=405&fit=crop",
+          "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=115&h=405&fit=crop",
           "mobile": {
             "dimensions": {
               "width": 115,
@@ -20,13 +20,13 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=115&h=70&fit=crop"
+            "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=115&h=70&fit=crop"
           }
         },
         "description": [
           {
             "type": "heading2",
-            "text": "Empower web-enabled ROI",
+            "text": "Architect visionary systems",
             "spans": []
           }
         ]
@@ -39,7 +39,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=115&h=405&fit=crop",
+          "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=115&h=405&fit=crop",
           "mobile": {
             "dimensions": {
               "width": 115,
@@ -47,40 +47,13 @@
             },
             "alt": "Placeholder image",
             "copyright": null,
-            "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=115&h=70&fit=crop"
+            "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=115&h=70&fit=crop"
           }
         },
         "description": [
           {
             "type": "heading2",
-            "text": "Redefine interactive mindshare",
-            "spans": []
-          }
-        ]
-      },
-      {
-        "image": {
-          "dimensions": {
-            "width": 115,
-            "height": 405
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=115&h=405&fit=crop",
-          "mobile": {
-            "dimensions": {
-              "width": 115,
-              "height": 70
-            },
-            "alt": "Placeholder image",
-            "copyright": null,
-            "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=115&h=70&fit=crop"
-          }
-        },
-        "description": [
-          {
-            "type": "heading2",
-            "text": "Whiteboard revolutionary relationships",
+            "text": "Incentivize back-end infomediaries",
             "spans": []
           }
         ]
@@ -90,21 +63,21 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Enhance global portals",
+          "text": "Productize distributed functionalities",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Exercitation commodo laboris dolor commodo et eu in. Elit ipsum voluptate ex eiusmod qui aute consectetur irure nulla officia.",
+          "text": "Reprehenderit deserunt aliquip tempor culpa proident mollit duis. Proident anim dolor incididunt Lorem exercitation. Tempor culpa labore id eiusmod ipsum proident.",
           "spans": []
         }
       ],
-      "ctaLabel": "engineer frictionless mindshare",
+      "ctaLabel": "strategize B2C experiences",
       "cta": {
         "link_type": "Web",
-        "url": "https://slicemachine.dev"
+        "url": "https://prismic.io"
       }
     }
   },
@@ -117,18 +90,18 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Engage clicks-and-mortar synergies",
+          "text": "Scale intuitive applications",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Aliqua eu est do ea deserunt ex tempor est id ipsum mollit aute incididunt culpa eiusmod. Aute duis adipisicing magna ea duis.",
+          "text": "Voluptate labore ad culpa enim aute tempor amet veniam laborum exercitation.",
           "spans": []
         }
       ],
-      "ctaLabel": "syndicate synergistic experiences",
+      "ctaLabel": "brand innovative eyeballs",
       "cta": {
         "link_type": "Web",
         "url": "http://twitter.com"
@@ -140,7 +113,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=442&h=337&fit=crop"
+        "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?w=442&h=337&fit=crop"
       },
       "secondaryImage": {
         "dimensions": {
@@ -149,7 +122,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=320&h=189&fit=crop"
+        "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=320&h=189&fit=crop"
       }
     }
   }

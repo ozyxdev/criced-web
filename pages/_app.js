@@ -8,10 +8,12 @@ export default class MyApp extends NextApp {
     const client = Client()
     const menu = (await client.getSingle('menu')) || {}
     const footer = (await client.getSingle('footer')) || {}
+    const infoBanner = (await client.getSingle('info-banner')) || {}
     return {
       props: {
         menu,
         footer,
+        infoBanner,
       },
     }
   }
@@ -19,7 +21,7 @@ export default class MyApp extends NextApp {
   render() {
     const { Component, pageProps, props } = this.props
     return (
-      <Layout footer={props.footer}>
+      <Layout footer={props.footer} infoBanner={props.infoBanner}>
         <Component {...pageProps} />
       </Layout>
     )

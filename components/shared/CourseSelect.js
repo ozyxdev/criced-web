@@ -8,6 +8,7 @@ import { gradesEnum, levels, levelsEnum } from '../../utils/constants'
 import { useMediaQuery } from '../../utils/useMediaQuery'
 
 const LevelsStylesContainer = styled.div`
+  margin-top: 4rem;
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 6rem auto 6rem;
@@ -181,7 +182,6 @@ function CourseSelect({ courses }) {
 
   return (
     <>
-      <h1>Courses</h1>
       <LevelsStylesContainer>
         <ul>
           {Object.keys(levels).map((level) => (

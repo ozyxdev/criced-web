@@ -6,17 +6,19 @@ import TypographyStyles from './styles/Typography'
 import ExitPreviewButton from './shared/ExitPreviewButton'
 import Navigation from './shared/Navigation'
 import Footer from './shared/Footer'
+import InfoBanner from './shared/InfoBanner'
 
 const MainContainer = styled.main`
   max-width: var(--max-width);
   margin: 0 auto;
 `
 
-const Layout = ({ children, menu, footer }) => (
+const Layout = ({ children, menu, footer, infoBanner }) => (
   <div>
     <Head>
       <title> Prismic Next.js Multi Page Website </title>
     </Head>
+    <InfoBanner infoBanner={infoBanner} />
     <Navigation />
     <GlobalStyles />
     <TypographyStyles />

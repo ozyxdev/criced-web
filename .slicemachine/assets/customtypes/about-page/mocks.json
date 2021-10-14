@@ -1,6 +1,11 @@
 {
-  "id": "7a828cad-c598-4506-b3a2-58cb6e25ca19",
-  "uid": "hic-cum-sed",
+  "id": "b161e5d0-c519-40cf-a700-74c6ca5fa96c",
+  "uid": "assumenda-nisi-nemo",
   "type": "about-page",
-  "data": {}
+  "data": {
+    "home": {
+      "link_type": "Web",
+      "url": "http://google.com"
+    }
+  }
 }

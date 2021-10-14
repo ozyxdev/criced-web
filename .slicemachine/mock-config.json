@@ -9,7 +9,11 @@
     "MainContent": {},
     "CourseSelect": {},
     "Nivel": {},
-    "CourseMenu": {},
+    "CourseMenu": {
+      "default-slice": {
+        "primary": {}
+      }
+    },
     "ServicesSlice": {},
     "ContactSlice": {},
     "HeaderSlice": {
@@ -31,32 +35,7 @@
       }
     },
     "OurTeamSlice": {},
-    "DirectorTeamSlice": {
-      "default-slice": {
-        "primary": {
-          "title": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          },
-          "description": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          }
-        },
-        "items": {
-          "resume": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          }
-        }
-      }
-    },
+    "DirectorTeamSlice": {},
     "CourseHeaderSlice": {},
     "CourseCurriculumSlice": {
       "default-slice": {
@@ -139,6 +118,14 @@
     "footer": {
       "social": {}
     },
-    "faq": {}
+    "faq": {},
+    "info-banner": {
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
   }
 }

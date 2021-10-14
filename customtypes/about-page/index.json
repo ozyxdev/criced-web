@@ -12,6 +12,14 @@
         },
         "type": "UID"
       },
+      "home": {
+        "config": {
+          "label": "Link a Inicio",
+          "select": "document",
+          "customtypes": []
+        },
+        "type": "Link"
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
