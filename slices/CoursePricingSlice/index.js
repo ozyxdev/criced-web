@@ -15,6 +15,7 @@ const CoursePricingContainersStyles = styled.section`
   padding: 4rem;
   background: rgba(251, 252, 254, 1);
   .container {
+    margin-top: 6rem;
     display: grid;
     grid-gap: 4rem;
     justify-items: center;
@@ -23,6 +24,9 @@ const CoursePricingContainersStyles = styled.section`
   @media (min-width: 480px) {
     .container {
       grid-template-columns: 1fr 1fr;
+    }
+    .container.precioUnico {
+      grid-template-columns: 1fr;
     }
   }
 `
@@ -57,24 +61,26 @@ const CoursePricingSlice = ({ slice }) => {
   }
 
   return (
-    <CoursePricingContainersStyles className="container-full-width">
+    <CoursePricingContainersStyles className={`container-full-width `}>
       <HeaderStyles>
         <h2>{title || 'Nec ultrices dui.'}</h2>
         <p>
           {description || 'Vestibulum morbi blandit cursus risus at ultrices .'}
         </p>
       </HeaderStyles>
-      <div className="container">
+      <div className={`container ${slice.variation}`}>
         <CoursePricing
           courseInfo={primaryCourseInfo}
           key="primary"
           type="primary"
         />
-        <CoursePricing
-          courseInfo={secondaryCourseInfo}
-          key="secondary"
-          type="secondary"
-        />
+        {slice.variation !== 'precioUnico' && (
+          <CoursePricing
+            courseInfo={secondaryCourseInfo}
+            key="secondary"
+            type="secondary"
+          />
+        )}
       </div>
     </CoursePricingContainersStyles>
   )

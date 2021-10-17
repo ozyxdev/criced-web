@@ -5,28 +5,48 @@
     "slice_type": "course_pricing_slice",
     "items": [],
     "primary": {
-      "title": "incentivize next-generation platforms",
-      "description": "enable dot-com methodologies",
-      "primaryTitle": "transform sexy experiences",
-      "primaryDescription": "maximize user-centric e-commerce",
-      "primaryPrice": "e-enable dot-com channels",
+      "title": "transform world-class ROI",
+      "description": "target user-centric platforms",
+      "primaryTitle": "maximize turn-key vortals",
+      "primaryDescription": "seize global portals",
+      "primaryPrice": "repurpose world-class bandwidth",
       "primaryItems": [
         {
           "type": "paragraph",
-          "text": "Elit veniam ullamco sint proident id id eu dolore id.",
+          "text": "Laboris laboris et laboris non incididunt nulla amet exercitation veniam adipisicing laboris aute minim est. Non ullamco fugiat sint anim incididunt ad dolor non do irure duis do deserunt laborum.",
           "spans": []
         }
       ],
-      "secondaryTitle": "embrace compelling methodologies",
-      "secondaryDescription": "grow dynamic methodologies",
+      "secondaryTitle": "deliver transparent partnerships",
+      "secondaryDescription": "maximize web-enabled systems",
       "secondaryItems": [
         {
           "type": "paragraph",
-          "text": "Ut est incididunt sint sunt aliquip eu. Reprehenderit ad incididunt elit. Laborum voluptate tempor Lorem anim labore cupidatat et non voluptate et ipsum esse proident.",
+          "text": "Dolore fugiat ea mollit quis aliquip nisi non ipsum do aliquip occaecat cupidatat dolor. Ullamco tempor aliquip nulla enim velit et laboris nulla. Fugiat non mollit elit Lorem nisi eiusmod ad sunt ex.",
           "spans": []
         }
       ],
-      "secondaryPrice": "repurpose viral e-business"
+      "secondaryPrice": "synergize seamless supply-chains"
+    }
+  },
+  {
+    "variation": "precioUnico",
+    "name": "Precio Unico",
+    "slice_type": "course_pricing_slice",
+    "items": [],
+    "primary": {
+      "title": "recontextualize frictionless communities",
+      "description": "revolutionize B2C markets",
+      "primaryTitle": "implement killer systems",
+      "primaryDescription": "drive ubiquitous vortals",
+      "primaryPrice": "visualize ubiquitous schemas",
+      "primaryItems": [
+        {
+          "type": "paragraph",
+          "text": "Sunt pariatur cupidatat laboris quis esse ipsum excepteur consequat sunt enim. Irure ad laborum reprehenderit deserunt in cillum mollit.",
+          "spans": []
+        }
+      ]
     }
   }
 ]

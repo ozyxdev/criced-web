@@ -65,6 +65,9 @@
             }
           }
         }
+      },
+      "precioUnico": {
+        "primary": {}
       }
     },
     "FaqSlice": {
