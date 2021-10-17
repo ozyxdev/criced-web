@@ -1,0 +1,66 @@
+{
+  "id": "info-banner",
+  "label": "InfoBanner",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "icon": {
+        "config": {
+          "label": "Icono",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "description": {
+        "config": {
+          "label": "Descripción",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        },
+        "type": "StructuredText"
+      },
+      "linkLabel": {
+        "config": {
+          "label": "Link Texto",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "linkURL": {
+        "config": {
+          "label": "Link URL",
+          "placeholder": "",
+          "select": "web",
+          "allowTargetBlank": false
+        },
+        "type": "Link"
+      },
+      "type": {
+        "config": {
+          "label": "Tipo",
+          "placeholder": "",
+          "options": [
+            "default",
+            "alerta",
+            "peligro",
+            "exito"
+          ],
+          "default_value": "default"
+        },
+        "type": "Select"
+      },
+      "active": {
+        "config": {
+          "label": "Visible",
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": false
+        },
+        "type": "Boolean"
+      }
+    }
+  }
+}

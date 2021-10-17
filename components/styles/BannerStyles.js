@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const BannerContainerStyles = styled.section`
-  margin-top: 6rem;
+  margin: 6rem 0 10rem 0;
 
   .container {
     display: grid;

@@ -1,0 +1,30 @@
+{
+  "id": "84268c62-b736-4658-ae91-33c984c8ea4f",
+  "uid": "doloribus-corrupti-sed",
+  "type": "info-banner",
+  "data": {
+    "icon": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
+    },
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Est dolor commodo id amet cillum qui. Commodo minim officia aliquip irure officia tempor quis ipsum et in fugiat officia. Commodo quis consectetur est fugiat veniam.",
+        "spans": []
+      }
+    ],
+    "linkLabel": "mesh customized experiences",
+    "linkURL": {
+      "link_type": "Web",
+      "url": "http://twitter.com"
+    },
+    "type": "default",
+    "active": true
+  }
+}

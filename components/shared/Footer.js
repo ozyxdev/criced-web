@@ -92,7 +92,7 @@ function Footer({ footer = [] }) {
           <div className="container">
             <ul className="social">
               {socialItems.map(({ icon, link }) => (
-                <li>
+                <li key={icon.alt}>
                   <a href={PrismicLink.url(link)}>
                     <img src={icon.url} alt={icon.alt} />
                   </a>
