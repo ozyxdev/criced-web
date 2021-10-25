@@ -11,6 +11,20 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "ContactSlice",
       "primary": {
+        "titleSection": {
+          "config": {
+            "label": "Título (Sección)",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "descriptionSection": {
+          "config": {
+            "label": "Descripción (Sección)",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
         "title": {
           "type": "StructuredText",
           "config": {

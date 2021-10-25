@@ -12,6 +12,7 @@ import {
   ContactInfoStyles,
   ContactStyles,
 } from '../../components/styles/ContactStyles'
+import { HeaderStyles } from '../../components/shared/HeaderStyles'
 
 const ContactSlice = ({ slice }) => {
   const { inputs, handleChange, resetForm } = useForm({
@@ -29,113 +30,119 @@ const ContactSlice = ({ slice }) => {
   }
 
   return (
-    <ContactStyles>
-      <ContactFormStyles method="POST" onSubmit={handleSubmit}>
-        <fieldset>
-          <label htmlFor="name">
-            Nombre
-            <div className="input-container">
-              <UserIcon />
+    <>
+      <HeaderStyles>
+        <h2>{slice.primary.titleSection}</h2>
+        <p>{slice.primary.descriptionSection}</p>
+      </HeaderStyles>
+      <ContactStyles>
+        <ContactFormStyles method="POST" onSubmit={handleSubmit}>
+          <fieldset>
+            <label htmlFor="name">
+              Nombre
+              <div className="input-container">
+                <UserIcon />
 
-              <input
-                type="text"
-                name="name"
-                autoComplete="name"
-                placeholder="Juan Doe"
-                value={inputs.name}
-                onChange={handleChange}
-              />
-            </div>
-          </label>
-          <label htmlFor="email">
-            Email
-            <div className="input-container">
-              <AtIcon />
-              <input
-                type="email"
-                name="email"
-                autoComplete="email"
-                placeholder="email@example.com"
-                value={inputs.email}
-                onChange={handleChange}
-              />
-            </div>
-          </label>
-          <label htmlFor="telephone">
-            Teléfono
-            <div className="input-container">
-              <PhoneIcon />
+                <input
+                  type="text"
+                  name="name"
+                  autoComplete="name"
+                  placeholder="Juan Doe"
+                  value={inputs.name}
+                  onChange={handleChange}
+                />
+              </div>
+            </label>
+            <label htmlFor="email">
+              Email
+              <div className="input-container">
+                <AtIcon />
+                <input
+                  type="email"
+                  name="email"
+                  autoComplete="email"
+                  placeholder="email@example.com"
+                  value={inputs.email}
+                  onChange={handleChange}
+                />
+              </div>
+            </label>
+            <label htmlFor="telephone">
+              Teléfono
+              <div className="input-container">
+                <PhoneIcon />
 
-              <input
-                type="tel"
-                name="telephone"
-                autoComplete="telephone"
-                placeholder="444 123 4567"
-                value={inputs.telephone}
+                <input
+                  type="tel"
+                  name="telephone"
+                  autoComplete="telephone"
+                  placeholder="444 123 4567"
+                  value={inputs.telephone}
+                  onChange={handleChange}
+                />
+              </div>
+            </label>
+            <label htmlFor="message" className="message">
+              Mensaje
+              <textarea
+                rows="5"
+                id="message"
+                name="message"
+                autoComplete="message"
+                placeholder="Your message"
+                value={inputs.message}
                 onChange={handleChange}
               />
+            </label>
+            <div className="cta">
+              <button type="submit">
+                <span>{slice.primary.cta}</span>
+              </button>
             </div>
-          </label>
-          <label htmlFor="message" className="message">
-            Mensaje
-            <textarea
-              rows="5"
-              id="message"
-              name="message"
-              autoComplete="message"
-              placeholder="Your message"
-              value={inputs.message}
-              onChange={handleChange}
-            />
-          </label>
-          <div className="cta">
-            <button type="submit">
-              <span>{slice.primary.cta}</span>
-            </button>
-          </div>
-        </fieldset>
-      </ContactFormStyles>
-      <span className="cta-line">
-        o envia un email a <a>{slice.primary.email}</a>
-      </span>
-      <ContactInfoStyles>
-        <div className="contact-info-head">
-          <span className="title">
-            {slice.primary.title ? (
-              <RichText render={slice.primary.title} />
+          </fieldset>
+        </ContactFormStyles>
+        <span className="cta-line">
+          o envia un email a <a>{slice.primary.email}</a>
+        </span>
+        <ContactInfoStyles>
+          <div className="contact-info-head">
+            <span className="title">
+              {slice.primary.title ? (
+                <RichText render={slice.primary.title} />
+              ) : (
+                <h2>Template slice, update me!</h2>
+              )}
+            </span>
+            {slice.primary.description ? (
+              <RichText render={slice.primary.description} />
             ) : (
-              <h2>Template slice, update me!</h2>
+              <p>start by editing this slice from inside Prismic builder!</p>
             )}
-          </span>
-          {slice.primary.description ? (
-            <RichText render={slice.primary.description} />
-          ) : (
-            <p>start by editing this slice from inside Prismic builder!</p>
-          )}
-        </div>
-        <div className="contact-info">
-          <div className="contact-info-item">
-            <MailSendIcon fill />
-            {slice.primary.email}
           </div>
-          <div className="contact-info-item">
-            <PhoneIcon fill />
-            {slice.primary.phone}
+          <div className="contact-info">
+            <div className="contact-info-item">
+              <MailSendIcon fill />
+              {slice.primary.email}
+            </div>
+            <div className="contact-info-item">
+              <PhoneIcon fill />
+              {slice.primary.phone}
+            </div>
+            <div className="contact-info-item">
+              <PinIcon fill />
+              {slice.primary.address}
+            </div>
           </div>
-          <div className="contact-info-item">
-            <PinIcon fill />
-            {slice.primary.address}
+          <div className="social">
+            {slice?.items?.map((item, i) => (
+              <a href={Link.url(item.link)} key={item.socialIcon.alt}>
+                <img src={item.socialIcon.url} alt={item.socialIcon.alt} />
+              </a>
+            ))}
           </div>
-        </div>
-        <div className="social">
-          {slice?.items?.map((item, i) => (
-            <a href={Link.url(item.link)} key={item.socialIcon.alt}>
-              <img src={item.socialIcon.url} alt={item.socialIcon.alt} />
-            </a>
-          ))}
-        </div>
-      </ContactInfoStyles>
-    </ContactStyles>
+        </ContactInfoStyles>
+      </ContactStyles>
+    </>
   )
 }
 
