@@ -15,7 +15,11 @@
       }
     },
     "ServicesSlice": {},
-    "ContactSlice": {},
+    "ContactSlice": {
+      "default-slice": {
+        "primary": {}
+      }
+    },
     "HeaderSlice": {
       "default-slice": {
         "primary": {

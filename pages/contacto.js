@@ -6,20 +6,15 @@ import { Client } from '../prismic-configuration'
 import resolver from '../sm-resolver'
 import { getAllCourses } from '../utils/api'
 
-export default function Nosotros({ aboutpage, home }) {
-  const { items, primary } = home.data.slices.filter(
-    (slice) => slice.slice_type === 'services_slice'
+export default function Contacto({ home }) {
+  const contactSlice = home.data.slices.filter(
+    (slice) => slice.slice_type === 'contact_slice'
   )[0]
+  console.log('home', home)
+  console.log('contactSlice', contactSlice)
 
-  return (
-    <SliceZone
-      resolver={resolver}
-      sliceProps={({ sliceName }) => ({
-        data: sliceName === 'ServicesSlice' ? { items, primary } : null,
-      })}
-      slices={aboutpage.data.slices}
-    />
-  )
+  // console.log('contactSlice', contactSlice);
+  return <SliceZone resolver={resolver} slices={[contactSlice]} />
 }
 
 export const getStaticProps = async (...args) => {
