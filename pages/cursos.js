@@ -1,6 +1,5 @@
 import CourseSelect from '../components/shared/CourseSelect'
 import { HeaderStyles } from '../components/shared/HeaderStyles'
-import { getAllCourses } from '../utils/api'
 
 function Courses({ courses }) {
   return (
@@ -18,15 +17,4 @@ function Courses({ courses }) {
     </>
   )
 }
-
-export async function getStaticProps({ params }) {
-  const courses = await getAllCourses()
-
-  return {
-    props: {
-      courses,
-    },
-  }
-}
-
 export default Courses

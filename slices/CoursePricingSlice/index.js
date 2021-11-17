@@ -3,6 +3,7 @@ import { RichText } from 'prismic-reactjs'
 import Link from 'next/link'
 import styled from 'styled-components'
 import {
+  levelsEnum,
   PRIMARY_COURSE_INFO,
   SECONDARY_COURSE_INFO,
 } from '../../utils/constants'
@@ -31,7 +32,7 @@ const CoursePricingContainersStyles = styled.section`
   }
 `
 
-const CoursePricingSlice = ({ slice }) => {
+const CoursePricingSlice = ({ slice, level }) => {
   const {
     title,
     description,
@@ -47,14 +48,14 @@ const CoursePricingSlice = ({ slice }) => {
 
   const primaryCourseInfo = {
     title: primaryTitle || PRIMARY_COURSE_INFO.title,
-    price: primaryPrice || PRIMARY_COURSE_INFO.price,
+    price: primaryPrice || PRIMARY_COURSE_INFO.price[level.toLowerCase()],
     description: primaryDescription || PRIMARY_COURSE_INFO.description,
     items: primaryItems,
     itemsDefault: PRIMARY_COURSE_INFO.items,
   }
   const secondaryCourseInfo = {
     title: secondaryTitle || SECONDARY_COURSE_INFO.title,
-    price: secondaryPrice || SECONDARY_COURSE_INFO.price,
+    price: secondaryPrice || SECONDARY_COURSE_INFO.price[level.toLowerCase()],
     description: secondaryDescription || SECONDARY_COURSE_INFO.description,
     items: secondaryItems,
     itemsDefault: SECONDARY_COURSE_INFO.items,
@@ -69,11 +70,13 @@ const CoursePricingSlice = ({ slice }) => {
         </p>
       </HeaderStyles>
       <div className={`container ${slice.variation}`}>
-        <CoursePricing
-          courseInfo={primaryCourseInfo}
-          key="primary"
-          type="primary"
-        />
+        {slice.variation !== 'asesoria' && (
+          <CoursePricing
+            courseInfo={primaryCourseInfo}
+            key="primary"
+            type="primary"
+          />
+        )}
         {slice.variation !== 'precioUnico' && (
           <CoursePricing
             courseInfo={secondaryCourseInfo}
@@ -108,6 +111,11 @@ const CoursePricingStyle = styled.div`
     font-weight: 600;
     line-height: 1;
     margin: 1rem 0;
+
+    span {
+      font-size: 2.5rem;
+      margin-left: -0.8rem;
+    }
   }
 
   p {
@@ -117,6 +125,7 @@ const CoursePricingStyle = styled.div`
   ul {
     list-style: none;
     padding-left: 0;
+    line-height: 180%;
   }
 
   li {
@@ -145,7 +154,9 @@ const CoursePricingStyle = styled.div`
 const CoursePricing = ({ courseInfo, type }) => (
   <CoursePricingStyle type={type}>
     <h2>{courseInfo.title}</h2>
-    <h3>&#36;{courseInfo.price}</h3>
+    <h3>
+      &#36;{courseInfo.price} {type === 'secondary' && <span>/hora</span>}
+    </h3>
     <p>{courseInfo.description}</p>
     <hr />
     {courseInfo.items.length ? (
