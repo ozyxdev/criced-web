@@ -5,7 +5,15 @@ import { Client } from '../../prismic-configuration'
 import resolver from '../../sm-resolver'
 import { getAllCoursesWithSlug } from '../../utils/api'
 
-const Page = ({ slices }) => <SliceZone resolver={resolver} slices={slices} />
+const Page = ({ slices, level }) => (
+  <SliceZone
+    resolver={resolver}
+    slices={slices}
+    sliceProps={({ sliceName }) => ({
+      level: sliceName === 'CoursePricingSlice' ? level : null,
+    })}
+  />
+)
 
 export const getStaticProps = async ({ params }) => {
   const curso = await Client().getByUID('curso', params.uid)
@@ -13,6 +21,7 @@ export const getStaticProps = async ({ params }) => {
   return {
     props: {
       slices: curso.data.slices,
+      level: curso.data.level,
     },
   }
 }

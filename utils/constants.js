@@ -122,26 +122,37 @@ const MENU_ITEMS = [
 
 const PRIMARY_COURSE_INFO = {
   title: 'Curso de Regularización',
-  price: '2000',
+  price: {
+    [levelsEnum.PRIMARIA]: '3,240',
+    [levelsEnum.SECUNDARIA]: '3,600',
+    [levelsEnum.PREPARATORIA]: '3,960',
+    [levelsEnum.UNIVERSIDAD]: '6,500',
+  },
   description: 'Ac odio tempor orci dapibus ultrices in iaculis.',
   items: [
-    'Aut non rerum quia eum praesentium aliquid',
-
-    'Quos numquam voluptas dolorem repellat',
-
-    'Vero autem dicta id asperiores eveniet',
-
-    'Quia sunt repellendus',
+    'Acorde con el plan de estudios de la SEP',
+    'Retroalimentación y evaluación constante',
+    'Grupos pequeños ',
+    'Docentes con experiencia en el grado',
+    '36 horas de curso ',
   ],
 }
+
 const SECONDARY_COURSE_INFO = {
   title: 'Asesoría Particular',
-  price: '400',
+  price: {
+    [levelsEnum.PRIMARIA]: '120',
+    [levelsEnum.SECUNDARIA]: '130',
+    [levelsEnum.PREPARATORIA]: '140',
+    [levelsEnum.UNIVERSIDAD]: '160',
+  },
   description: 'Ac odio tempor orci dapibus ultrices in iaculis.',
   items: [
-    'Aut non rerum quia eum praesentium aliquid',
-    'Vero autem dicta id asperiores eveniet',
-    'Quia sunt repellendus',
+    'Preparación de exámenes',
+    'Asesoría en tareas',
+    'Enfocado en tus necesidades',
+    'Avance a tu ritmo',
+    'Tú decides el número de clases',
   ],
 }
 
