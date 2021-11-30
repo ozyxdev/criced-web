@@ -1,16 +1,18 @@
+import CourseSelect from '../components/shared/CourseSelect'
 import { HeaderStyles } from '../components/shared/HeaderStyles'
 
 function Courses() {
   return (
     <>
-      {/* todo fetch from hom page */}
       <HeaderStyles>
-        <h2>Habitant morbi tristique senectus.</h2>
+        <h2>Conoce nuestros cursos</h2>
         <p>
-          Feugiat sed lectus vestibulum mattis ullamcorper velit sed
-          ullamcorper. Sit amet facilisis magna etiam tempor orci eu.
+          Contamos con regularizaciones en todos los niveles educativos, así
+          como con asesorías individuales. Explora los temarios y decide el
+          curso más adecuado para ti.
         </p>
       </HeaderStyles>
+      <CourseSelect />
     </>
   )
 }
