@@ -1,7 +1,6 @@
-import CourseSelect from '../components/shared/CourseSelect'
 import { HeaderStyles } from '../components/shared/HeaderStyles'
 
-function Courses({ courses }) {
+function Courses() {
   return (
     <>
       {/* todo fetch from hom page */}
@@ -12,8 +11,6 @@ function Courses({ courses }) {
           ullamcorper. Sit amet facilisis magna etiam tempor orci eu.
         </p>
       </HeaderStyles>
-
-      <CourseSelect courses={courses} />
     </>
   )
 }
