@@ -26,6 +26,8 @@ const ServiceItemStyles = styled.article`
   img {
     flex-basis: 0;
     align-self: flex-end;
+    height: 4rem;
+    width: 4rem;
   }
   h3 {
     font-size: 22px;
@@ -36,6 +38,7 @@ const ServiceItemStyles = styled.article`
     font-size: 12px;
     color: #8c8ca1;
     text-transform: uppercase;
+    line-height: 150%;
   }
 `
 
