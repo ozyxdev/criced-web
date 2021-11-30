@@ -89,6 +89,7 @@ const BannerImageStyles = styled.div`
   }
 
   @media (min-width: 480px) {
+    min-height: 405px;
     cursor: pointer;
     background-image: linear-gradient(
         to bottom,
