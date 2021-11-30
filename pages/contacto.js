@@ -10,10 +10,7 @@ export default function Contacto({ home }) {
   const contactSlice = home.data.slices.filter(
     (slice) => slice.slice_type === 'contact_slice'
   )[0]
-  console.log('home', home)
-  console.log('contactSlice', contactSlice)
 
-  // console.log('contactSlice', contactSlice);
   return <SliceZone resolver={resolver} slices={[contactSlice]} />
 }
 

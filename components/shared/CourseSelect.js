@@ -1,11 +1,12 @@
 import { RichText } from 'prismic-reactjs'
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
 
 import LongArrowIcon from './icons/long-arrow'
 import { gradesEnum, levels, levelsEnum } from '../../utils/constants'
 import { useMediaQuery } from '../../utils/useMediaQuery'
+import { queryCursos } from '../../utils/prismicQueries'
 
 const LevelsStylesContainer = styled.div`
   margin-top: 4rem;
@@ -151,7 +152,7 @@ const CourseCardStyles = styled.article`
   }
 `
 
-function CourseSelect({ courses }) {
+function CourseSelect() {
   const [selectedLevel, setSelectedLevel] = useState(levelsEnum.PRIMARIA)
   const [selectedGrade, setSelectedGrade] = useState(gradesEnum.PRIMERO)
   const [availableCourses, setAvailableCourses] = useState([])
@@ -159,80 +160,113 @@ function CourseSelect({ courses }) {
   const [gradesOrdinalsOptions, setGradesOrdinalsOptions] = useState([])
   const isOverMobile = useMediaQuery('(min-width: 480px)')
 
+  const [courses, setCourses] = useState(null)
+
+  // Recursive function to retrieve all courses
+  const recursivelyFetchAllCourses = useCallback(
+    async (currentCursor = null) => {
+      const response = await queryCursos(currentCursor)
+      const currentCourse = response.data.allCursos.edges.map(
+        (edge) => edge.node
+      )
+
+      if (!response.data.allCursos.pageInfo.hasNextPage) {
+        return currentCourse
+      }
+
+      const newCursor = response.data.allCursos.pageInfo.endCursor
+      const newCourse = await recursivelyFetchAllCourses(newCursor)
+
+      return [...currentCourse, ...newCourse]
+    },
+    []
+  )
+
+  // Fetch all courses when the component mounts
+  useEffect(() => {
+    const fetchAllCourses = async () => {
+      const allCourses = await recursivelyFetchAllCourses()
+      setCourses(allCourses)
+    }
+    fetchAllCourses()
+  }, [recursivelyFetchAllCourses])
+
   useEffect(() => {
     const { grades, gradesOrdinals } = levels[selectedLevel]
     setGradesOptions(grades)
     setGradesOrdinalsOptions(gradesOrdinals)
     setSelectedGrade(grades[0] || '')
-  }, [selectedLevel])
+  }, [selectedLevel, courses])
 
   useEffect(() => {
     if (!courses) return
     const filteredCourses = courses.filter((course) => {
       if (selectedGrade.toLowerCase() === gradesEnum.NA) {
-        return course.node.level.toLowerCase() === selectedLevel.toLowerCase()
+        return course.level.toLowerCase() === selectedLevel.toLowerCase()
       }
       return (
-        course.node.grade.toLowerCase() === selectedGrade.toLowerCase() &&
-        course.node.level.toLowerCase() === selectedLevel.toLowerCase()
+        course.grade.toLowerCase() === selectedGrade.toLowerCase() &&
+        course.level.toLowerCase() === selectedLevel.toLowerCase()
       )
     })
     setAvailableCourses(filteredCourses)
   }, [selectedGrade, selectedLevel, courses])
+  if (courses) {
+    return (
+      <>
+        <LevelsStylesContainer>
+          <ul>
+            {Object.keys(levels).map((level) => (
+              <li
+                id={level}
+                key={level}
+                data-selected={selectedLevel === level}
+                onClick={() => setSelectedLevel(level)}
+              >
+                {level}
+              </li>
+            ))}
+          </ul>
+        </LevelsStylesContainer>
+        <GradesStylesContainer>
+          <ul>
+            {gradesOptions &&
+              gradesOptions.map(
+                (grade, i) =>
+                  grade !== gradesEnum.NA && (
+                    <li
+                      key={grade}
+                      data-selected={selectedGrade === grade}
+                      onClick={() => setSelectedGrade(grade)}
+                    >
+                      {isOverMobile ? grade : gradesOrdinalsOptions[i]}
+                      {!isOverMobile && <>&ordm;</>}
+                    </li>
+                  )
+              )}
+          </ul>
+        </GradesStylesContainer>
 
-  return (
-    <>
-      <LevelsStylesContainer>
-        <ul>
-          {Object.keys(levels).map((level) => (
-            <li
-              id={level}
-              key={level}
-              data-selected={selectedLevel === level}
-              onClick={() => setSelectedLevel(level)}
-            >
-              {level}
-            </li>
-          ))}
-        </ul>
-      </LevelsStylesContainer>
-      <GradesStylesContainer>
-        <ul>
-          {gradesOptions &&
-            gradesOptions.map(
-              (grade, i) =>
-                grade !== gradesEnum.NA && (
-                  <li
-                    key={grade}
-                    data-selected={selectedGrade === grade}
-                    onClick={() => setSelectedGrade(grade)}
-                  >
-                    {isOverMobile ? grade : gradesOrdinalsOptions[i]}
-                    {!isOverMobile && <>&ordm;</>}
-                  </li>
-                )
-            )}
-        </ul>
-      </GradesStylesContainer>
-
-      <CardContainerStyles>
-        {availableCourses.map((course) => {
-          const { _meta, title, description } = course.node
-          return (
-            <CourseCardStyles key={_meta.uid}>
-              <RichText render={title} />
-              <RichText render={description} />
-              <Link href={`/cursos/${_meta.uid}`}>
-                <a href="">
-                  Conocer mas <LongArrowIcon />
-                </a>
-              </Link>
-            </CourseCardStyles>
-          )
-        })}
-      </CardContainerStyles>
-    </>
-  )
+        <CardContainerStyles>
+          {availableCourses.map((course) => {
+            const { _meta, title, description } = course
+            return (
+              <CourseCardStyles key={_meta.uid}>
+                <RichText render={title} />
+                <RichText render={description} />
+                <Link href={`/cursos/${_meta.uid}`}>
+                  <a href="">
+                    Conocer mas <LongArrowIcon />
+                  </a>
+                </Link>
+              </CourseCardStyles>
+            )
+          })}
+        </CardContainerStyles>
+      </>
+    )
+  }
+  return null
 }
 
 export default CourseSelect
