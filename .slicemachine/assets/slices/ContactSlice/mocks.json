@@ -12,11 +12,11 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=900&h=500&fit=crop"
         },
         "link": {
           "link_type": "Web",
-          "url": "https://slicemachine.dev"
+          "url": "http://google.com"
         }
       },
       {
@@ -27,37 +27,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
-        },
-        "link": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
-        }
-      },
-      {
-        "socialIcon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&h=500&fit=crop"
-        },
-        "link": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        }
-      },
-      {
-        "socialIcon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=900&h=500&fit=crop"
         },
         "link": {
           "link_type": "Web",
@@ -72,35 +42,55 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=900&h=500&fit=crop"
         },
         "link": {
           "link_type": "Web",
-          "url": "https://slicemachine.dev"
+          "url": "http://google.com"
+        }
+      },
+      {
+        "socialIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
+        },
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
         }
       }
     ],
     "primary": {
-      "titleSection": "innovate sexy vortals",
-      "descriptionSection": "enable collaborative relationships",
+      "titleSection": "synthesize innovative e-services",
+      "descriptionSection": "target dynamic e-tailers",
       "title": [
         {
           "type": "heading3",
-          "text": "Architect integrated ROI",
+          "text": "Incentivize robust communities",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Id fugiat Lorem reprehenderit nisi labore eiusmod occaecat reprehenderit labore pariatur sint laboris. Reprehenderit culpa veniam laboris ipsum exercitation proident voluptate. Velit labore velit mollit commodo mollit commodo quis Lorem magna laborum veniam.",
+          "text": "Nostrud tempor eu aliquip. Velit qui sit ut aliquip nisi magna aute id non incididunt.",
           "spans": []
         }
       ],
-      "cta": "generate out-of-the-box functionalities",
-      "email": "revolutionize impactful web-readiness",
-      "phone": "evolve turn-key interfaces",
-      "address": "synthesize dynamic markets"
+      "cta": "transform value-added metrics",
+      "email": "incubate rich networks",
+      "phone": "enable e-business eyeballs",
+      "address": "integrate extensible partnerships",
+      "privacyCopy": "leverage 24/365 architectures",
+      "privacyDoc": {
+        "link_type": "Web",
+        "url": "http://twitter.com"
+      }
     }
   }
 ]

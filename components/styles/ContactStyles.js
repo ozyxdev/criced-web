@@ -73,12 +73,44 @@ const ContactFormStyles = styled(FormStyles)`
     align-self: flex-end;
   }
 
+  .privacy {
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      a {
+        margin: 0.5rem 0 0 1rem;
+        border-bottom: 2px dotted var(--primary);
+        line-height: 130%;
+      }
+
+      input {
+        width: auto;
+        line-height: 2;
+      }
+    }
+  }
+
   button {
     background: var(--primary);
     border: none;
     color: var(--white);
     padding: 1rem 2rem;
     border-radius: 1rem;
+
+    cursor: pointer;
+
+    :active {
+      transform: scale(1.05);
+      background: rgba(89, 86, 233, 0.9);
+    }
+
+    :disabled {
+      cursor: not-allowed;
+      transform: none;
+      background: rgba(89, 86, 233, 0.9);
+    }
   }
 
   label {

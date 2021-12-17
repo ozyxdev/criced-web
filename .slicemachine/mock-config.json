@@ -17,7 +17,8 @@
     "ServicesSlice": {},
     "ContactSlice": {
       "default-slice": {
-        "primary": {}
+        "primary": {},
+        "items": {}
       }
     },
     "HeaderSlice": {

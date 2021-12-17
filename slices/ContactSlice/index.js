@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-bind */
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, RichText } from 'prismic-reactjs'
 import useForm from '../../utils/useForm'
 import UserIcon from '../../components/shared/icons/UserIcon'
@@ -21,6 +21,8 @@ const ContactSlice = ({ slice }) => {
     telephone: '',
     name: '',
   })
+
+  const [isPrivacyChecked, setIsPrivacyChecked] = useState(false)
 
   async function handleSubmit(e) {
     // TODO: send form to email
@@ -95,11 +97,31 @@ const ContactSlice = ({ slice }) => {
               />
             </label>
             <div className="cta">
-              <button type="submit">
+              <button type="submit" disabled={!isPrivacyChecked}>
                 <span>{slice.primary.cta}</span>
               </button>
             </div>
           </fieldset>
+          <form>
+            <div className="privacy">
+              <label htmlFor="checkbox">
+                <input
+                  type="checkbox"
+                  name="privacy"
+                  id="privacy"
+                  checked={isPrivacyChecked}
+                  onChange={() => setIsPrivacyChecked(!isPrivacyChecked)}
+                />
+                <a
+                  href={Link.url(slice.primary.privacyDoc)}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {slice.primary.privacyCopy}
+                </a>
+              </label>
+            </div>
+          </form>
         </ContactFormStyles>
         <span className="cta-line">
           o envia un email a <a>{slice.primary.email}</a>
