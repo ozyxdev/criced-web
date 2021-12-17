@@ -69,6 +69,21 @@
             "placeholder": ""
           },
           "type": "Text"
+        },
+        "privacyCopy": {
+          "config": {
+            "label": "Aviso de Privacidad",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "privacyDoc": {
+          "config": {
+            "label": "Documento de Aviso de Privacidad",
+            "placeholder": "",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
         }
       },
       "items": {

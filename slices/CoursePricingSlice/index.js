@@ -171,7 +171,7 @@ const CoursePricing = ({ courseInfo, type }) => (
         ))}
       </ul>
     )}
-    <Link href="/contact">
+    <Link href="/contacto">
       <ButtonPrimary>Más información</ButtonPrimary>
     </Link>
   </CoursePricingStyle>
