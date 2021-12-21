@@ -23,12 +23,26 @@ const ContactSlice = ({ slice }) => {
   })
 
   const [isPrivacyChecked, setIsPrivacyChecked] = useState(false)
+  const [messageSent, setMessageSent] = useState(false)
 
   async function handleSubmit(e) {
-    // TODO: send form to email
-    console.dir(inputs)
     e.preventDefault()
-    resetForm()
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json, text/plain, */*',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(inputs),
+    }).then((res) => {
+      if (res.status === 200) {
+        setMessageSent(true)
+        resetForm()
+      }
+      setTimeout(() => {
+        setMessageSent(false)
+      }, 3000)
+    })
   }
 
   return (
@@ -38,7 +52,11 @@ const ContactSlice = ({ slice }) => {
         <p>{slice.primary.descriptionSection}</p>
       </HeaderStyles>
       <ContactStyles>
-        <ContactFormStyles method="POST" onSubmit={handleSubmit}>
+        <ContactFormStyles
+          method="POST"
+          onSubmit={handleSubmit}
+          messageSent={messageSent}
+        >
           <fieldset>
             <label htmlFor="name">
               Nombre
@@ -79,6 +97,8 @@ const ContactSlice = ({ slice }) => {
                   name="telephone"
                   autoComplete="telephone"
                   placeholder="444 123 4567"
+                  pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                  required
                   value={inputs.telephone}
                   onChange={handleChange}
                 />
@@ -97,31 +117,30 @@ const ContactSlice = ({ slice }) => {
               />
             </label>
             <div className="cta">
+              <span className="alert">Gracias por tu mensaje!</span>
               <button type="submit" disabled={!isPrivacyChecked}>
                 <span>{slice.primary.cta}</span>
               </button>
             </div>
           </fieldset>
-          <form>
-            <div className="privacy">
-              <label htmlFor="checkbox">
-                <input
-                  type="checkbox"
-                  name="privacy"
-                  id="privacy"
-                  checked={isPrivacyChecked}
-                  onChange={() => setIsPrivacyChecked(!isPrivacyChecked)}
-                />
-                <a
-                  href={Link.url(slice.primary.privacyDoc)}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {slice.primary.privacyCopy}
-                </a>
-              </label>
-            </div>
-          </form>
+          <div className="privacy">
+            <label htmlFor="checkbox">
+              <input
+                type="checkbox"
+                name="privacy"
+                id="privacy"
+                checked={isPrivacyChecked}
+                onChange={() => setIsPrivacyChecked(!isPrivacyChecked)}
+              />
+              <a
+                href={Link.url(slice.primary.privacyDoc)}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {slice.primary.privacyCopy}
+              </a>
+            </label>
+          </div>
         </ContactFormStyles>
         <span className="cta-line">
           o envia un email a <a>{slice.primary.email}</a>
@@ -142,18 +161,24 @@ const ContactSlice = ({ slice }) => {
             )}
           </div>
           <div className="contact-info">
-            <div className="contact-info-item">
-              <MailSendIcon fill />
-              {slice.primary.email}
-            </div>
-            <div className="contact-info-item">
-              <PhoneIcon fill />
-              {slice.primary.phone}
-            </div>
-            <div className="contact-info-item">
-              <PinIcon fill />
-              {slice.primary.address}
-            </div>
+            {slice.primary.phone && (
+              <div className="contact-info-item">
+                <MailSendIcon fill />
+                {slice.primary.email}
+              </div>
+            )}
+            {slice.primary.phone && (
+              <div className="contact-info-item">
+                <PhoneIcon fill />
+                {slice.primary.phone}
+              </div>
+            )}
+            {slice.primary.address && (
+              <div className="contact-info-item">
+                <PinIcon fill />
+                {slice.primary.address}
+              </div>
+            )}
           </div>
           <div className="social">
             {slice?.items?.map((item, i) => (
