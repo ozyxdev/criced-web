@@ -1,18 +1,24 @@
 import SliceZone from 'next-slicezone'
 import { useGetStaticProps, useGetStaticPaths } from 'next-slicezone/hooks'
+import Head from 'next/head'
 import { Client } from '../../prismic-configuration'
 
 import resolver from '../../sm-resolver'
 import { getAllCoursesWithSlug } from '../../utils/api'
 
-const Page = ({ slices, level }) => (
-  <SliceZone
-    resolver={resolver}
-    slices={slices}
-    sliceProps={({ sliceName }) => ({
-      level: sliceName === 'CoursePricingSlice' ? level : null,
-    })}
-  />
+const Page = ({ slices, level, title }) => (
+  <>
+    <Head>
+      <title> CRICED | {title}</title>
+    </Head>
+    <SliceZone
+      resolver={resolver}
+      slices={slices}
+      sliceProps={({ sliceName }) => ({
+        level: sliceName === 'CoursePricingSlice' ? level : null,
+      })}
+    />
+  </>
 )
 
 export const getStaticProps = async ({ params }) => {
@@ -22,6 +28,7 @@ export const getStaticProps = async ({ params }) => {
     props: {
       slices: curso.data.slices,
       level: curso.data.level,
+      title: curso.data.title[0].text,
     },
   }
 }

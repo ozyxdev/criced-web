@@ -99,6 +99,8 @@ const FaqSlice = ({ slice }) => {
       answer.style.maxHeight = `${answer.scrollHeight}px`
     }
   }
+
+  console.log(`${slice.items}`)
   return (
     <FAQStyles>
       <FaqHeaderStyles>

@@ -9,18 +9,9 @@
     "MainContent": {},
     "CourseSelect": {},
     "Nivel": {},
-    "CourseMenu": {
-      "default-slice": {
-        "primary": {}
-      }
-    },
+    "CourseMenu": {},
     "ServicesSlice": {},
-    "ContactSlice": {
-      "default-slice": {
-        "primary": {},
-        "items": {}
-      }
-    },
+    "ContactSlice": {},
     "HeaderSlice": {
       "default-slice": {
         "primary": {
@@ -94,7 +85,8 @@
           }
         }
       }
-    }
+    },
+    "GeneralSocialCard": {}
   },
   "_cts": {
     "page": {},

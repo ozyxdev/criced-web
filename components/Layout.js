@@ -16,7 +16,7 @@ const MainContainer = styled.main`
 const Layout = ({ children, menu, footer, infoBanner }) => (
   <div>
     <Head>
-      <title> Prismic Next.js Multi Page Website </title>
+      <title> CRICED </title>
     </Head>
     <InfoBanner infoBanner={infoBanner} />
     <Navigation />
