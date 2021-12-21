@@ -59,6 +59,10 @@ const ContactInfoStyles = styled.div`
   }
 `
 
+// const FormAlert = styled.span`
+
+// `
+
 const ContactFormStyles = styled(FormStyles)`
   padding: 1.5rem;
 
@@ -71,6 +75,16 @@ const ContactFormStyles = styled(FormStyles)`
 
   .cta {
     align-self: flex-end;
+    display: flex;
+    span.alert {
+      opacity: ${({ messageSent }) => (messageSent ? 1 : 0)};
+      margin-right: 3rem;
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+      background: var(--success-light);
+      color: var(--success);
+      align-self: center;
+    }
   }
 
   .privacy {
