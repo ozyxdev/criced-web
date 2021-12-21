@@ -5,8 +5,8 @@
     "slice_type": "director_team_slice",
     "items": [
       {
-        "name": "matrix cross-media portals",
-        "title": "aggregate wireless vortals",
+        "name": "seize web-enabled bandwidth",
+        "title": "aggregate ubiquitous supply-chains",
         "image": {
           "dimensions": {
             "width": 200,
@@ -14,19 +14,19 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=200&h=256&fit=crop"
+          "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?w=200&h=256&fit=crop"
         },
         "resume": [
           {
             "type": "paragraph",
-            "text": "Ullamco eiusmod culpa culpa anim est id.",
+            "text": "Elit quis cillum ipsum adipisicing non. Labore adipisicing est ullamco.",
             "spans": []
           }
         ]
       },
       {
-        "name": "exploit extensible blockchains",
-        "title": "visualize 24/7 users",
+        "name": "recontextualize B2B vortals",
+        "title": "revolutionize robust relationships",
         "image": {
           "dimensions": {
             "width": 200,
@@ -34,12 +34,32 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=200&h=256&fit=crop"
+          "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=200&h=256&fit=crop"
         },
         "resume": [
           {
             "type": "paragraph",
-            "text": "Exercitation et ipsum commodo do eu tempor labore fugiat qui mollit quis. Cupidatat pariatur anim ut ullamco labore cupidatat.",
+            "text": "Tempor consequat proident occaecat elit adipisicing proident occaecat eiusmod consectetur ex voluptate ex cupidatat mollit laborum.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "name": "envisioneer sexy mindshare",
+        "title": "transition front-end schemas",
+        "image": {
+          "dimensions": {
+            "width": 200,
+            "height": 256
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=200&h=256&fit=crop"
+        },
+        "resume": [
+          {
+            "type": "paragraph",
+            "text": "Magna anim in voluptate irure ad. Consectetur mollit cupidatat nulla pariatur do do tempor.",
             "spans": []
           }
         ]
@@ -49,14 +69,14 @@
       "title": [
         {
           "type": "heading2",
-          "text": "Grow revolutionary web-readiness",
+          "text": "Repurpose distributed functionalities",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Amet dolore dolore dolor esse sit non duis sint. Ut labore cillum reprehenderit aliqua nisi sit quis.",
+          "text": "Ut qui laboris magna quis est nulla ut enim mollit Lorem Lorem.",
           "spans": []
         }
       ]

@@ -1,6 +1,6 @@
 import SliceZone from 'next-slicezone'
 import { useGetStaticProps } from 'next-slicezone/hooks'
-import Prismic from '@prismicio/client'
+import Head from 'next/head'
 import { Client } from '../prismic-configuration'
 
 import resolver from '../sm-resolver'
@@ -12,13 +12,19 @@ export default function Nosotros({ aboutpage, home }) {
   )[0]
 
   return (
-    <SliceZone
-      resolver={resolver}
-      sliceProps={({ sliceName }) => ({
-        data: sliceName === 'ServicesSlice' ? { items, primary } : null,
-      })}
-      slices={aboutpage.data.slices}
-    />
+    <>
+      <Head>
+        <title> CRICED | Nosotros </title>
+        <SliceZone resolver={resolver} slices={aboutpage.data.slices1} />
+      </Head>
+      <SliceZone
+        resolver={resolver}
+        sliceProps={({ sliceName }) => ({
+          data: sliceName === 'ServicesSlice' ? { items, primary } : null,
+        })}
+        slices={aboutpage.data.slices}
+      />
+    </>
   )
 }
 

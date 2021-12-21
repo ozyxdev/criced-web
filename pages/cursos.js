@@ -1,9 +1,13 @@
+import Head from 'next/head'
 import CourseSelect from '../components/shared/CourseSelect'
 import { HeaderStyles } from '../components/shared/HeaderStyles'
 
 function Courses() {
   return (
     <>
+      <Head>
+        <title> CRICED | Cursos </title>
+      </Head>
       <HeaderStyles>
         <h2>Conoce nuestros cursos</h2>
         <p>

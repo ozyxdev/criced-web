@@ -38,6 +38,19 @@
           }
         }
       }
+    },
+    "SEO": {
+      "slices1": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "general_social_card": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -1,0 +1,43 @@
+{
+  "id": "general_social_card",
+  "type": "SharedSlice",
+  "name": "GeneralSocialCard",
+  "description": "GeneralSocialCard",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "GeneralSocialCard",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "Título",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "description": {
+          "config": {
+            "label": "Descripción",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "image": {
+          "config": {
+            "label": "Imagen",
+            "constraint": {
+              "width": 1200,
+              "height": 650
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      },
+      "items": {}
+    }
+  ]
+}
