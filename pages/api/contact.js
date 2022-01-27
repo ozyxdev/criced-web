@@ -1,6 +1,26 @@
 import { createTransport } from 'nodemailer'
+import Cors from 'cors'
 
 require('dotenv').config()
+
+const cors = Cors({
+  methods: ['GET', 'POST', 'OPTIONS'],
+})
+
+// Helper method to wait for a middleware to execute before continuing
+// And to throw an error when an error happens in a middleware
+function runMiddleware(req, res, fn) {
+  console.log(`running middleware`)
+  return new Promise((resolve, reject) => {
+    fn(req, res, (result) => {
+      if (result instanceof Error) {
+        return reject(result)
+      }
+
+      return resolve(result)
+    })
+  })
+}
 
 function makeANiceEmail({ email, message, name, telephone }) {
   return `
@@ -33,11 +53,15 @@ const transporter = createTransport({
   secure: true,
 })
 export default async function (req, res) {
+  const mid = await runMiddleware(req, res, cors)
+  console.log('process.env.MAIL_PWD', process.env.MAIL_PWD)
+  console.log('process.env.MAIL_USER', process.env.MAIL_USER)
+  console.log('mid', mid)
   if (req.method === 'POST') {
     try {
       const { email, message, name, telephone } = req.body
       const info = await transporter.sendMail({
-        to: process.env.MAIL_USER,
+        to: 'omar.aguinaga94@gmail.com',
         from: process.env.MAIL_USER,
         subject: `📥 Nuevo mensaje de ${req.body.name} en criced.com`,
         html: makeANiceEmail({ name, email, message, telephone }),
